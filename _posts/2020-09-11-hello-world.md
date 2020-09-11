@@ -16,6 +16,6 @@ Test 1
 --- 
 
 ![Hier sollte ein Bild stehen](./_screenshots/binaer.jpg)
-<html><img alt="Hier sollte ein Bild stehen"  src="./_screenshots/binaer.jpg" width=100%/></html>
+<html><img alt="Hier sollte ein Bild stehen"  src="../_screenshots/binaer.jpg" width=100%/></html>
 
 
