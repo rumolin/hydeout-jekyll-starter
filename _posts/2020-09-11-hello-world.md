@@ -13,8 +13,8 @@ Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinform
 
 
 --- 
-![Desktop](https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true width="100%)
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="300px" />
+#![Desktop](https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true width="100%)
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="100%" />
 <img alt="Mobile post page" src="https://github.com/fongandrew/hydeout/blob/master/_screenshots/3.png?raw=true" width="300px" />
 
 
