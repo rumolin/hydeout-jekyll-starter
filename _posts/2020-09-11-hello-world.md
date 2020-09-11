@@ -13,6 +13,7 @@ Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinform
 
 
 --- 
+![Hier müssete ein Bild stehen](../_screenshots/binaer.jpg)
 
 <html><img alt="Hier sollte ein Bild stehen"  src="../_screenshots/binaer.jpg" width=100%/></html>
 
