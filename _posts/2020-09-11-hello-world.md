@@ -14,7 +14,8 @@ Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinform
 Test 1
 
 --- 
-![Hier sollte ein Bild stehen](./_screenshots/binaer.jpg)
 
+![Hier sollte ein Bild stehen](./_screenshots/binaer.jpg)
+<img alt="Hier sollte ein Bild stehen"  src="./_screenshots/binaer.jpg" width=100%>
 
 
