@@ -13,11 +13,7 @@ Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinform
 
 
 --- 
-![Hier müssete ein Bild stehen](../_screenshots/binaer.jpg)
-
-<html><img src=https://blogs.fu-berlin.de/abenteuerstudium/files/2019/07/matrix-3109378_1920-1200x827.jpg alt="HiereinBildbitte"/></html>
-
-![Desktop](https://github.com/fongandrew/hydeout/blob/master/_screenshots/1.png?raw=true)
+![Desktop](https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true width="100%+)
 <img alt="Mobile home page" src="https://github.com/fongandrew/hydeout/blob/master/_screenshots/2.png?raw=true" width="300px" />
 <img alt="Mobile post page" src="https://github.com/fongandrew/hydeout/blob/master/_screenshots/3.png?raw=true" width="300px" />
 
