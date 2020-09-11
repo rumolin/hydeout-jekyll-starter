@@ -11,8 +11,10 @@ sidebar_link: true
 
 Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinformatik. Ich habe bisher wenig Erfahrungen mit github-pages gesammelt, mit Jekyll funktioniert das aber bis jetzt ganz gut im Grossen und ganzen. 
 
+Test 1
+
 --- 
 ![Hier sollte ein Bild stehen](_screenshots/binaer.jpg)
----
+
 
 
