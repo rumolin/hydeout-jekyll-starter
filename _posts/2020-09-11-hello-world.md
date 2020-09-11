@@ -15,6 +15,8 @@ Hier ensteht in Kürze mein Lerntagebuch zum Modul Bibliotheks- und Archivinform
 --- 
 ![Hier müssete ein Bild stehen](../_screenshots/binaer.jpg)
 
+<html><img src=https://blogs.fu-berlin.de/abenteuerstudium/files/2019/07/matrix-3109378_1920-1200x827.jpg alt="HiereinBildbitte"/></html>
+
 
 
 
