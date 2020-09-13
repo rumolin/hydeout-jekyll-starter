@@ -4,6 +4,7 @@ title: Hello World
 excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
+category: Thema1
 
 ---
 
