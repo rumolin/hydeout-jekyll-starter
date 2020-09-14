@@ -13,7 +13,7 @@ tags:
 - markdown
 
 ---
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 1.PNG?raw=true" width="80%"/>
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 1.PNG?raw=true" width="70%"/>
 ---
 
 Aufsetzen des Lernblogs
@@ -65,9 +65,9 @@ Unix Shell Kommandos:
 Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Library Corpentry gemacht. Zusätzlich habe ich über die Shell ein File erstellt, um die nützlichen Befehle zu notieren. Dies ist hier abgelegt: [commands.txt](https://github.com/rumolin/lerntagebuch-bain/blob/master/commands.txt)
 Offene To Do’s bis nächstes Mal:
 
-[x] Blog Vorschau auf Hauptseite einrichten
-[] offene Fragen klären
-[] ...
+- [x] Blog Vorschau auf Hauptseite einrichten
+- [] offene Fragen klären
+- [] ...
 
 [^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.
 [^2]: Fussnotentext jeweils am Ende der Seite platzieren
