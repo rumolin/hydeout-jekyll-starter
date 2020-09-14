@@ -14,5 +14,6 @@ echo -> Anzeigen von Text
 variablen -> NAME= xyz; echo $NAME -> xyz wird ausgegeben
 echo $(date) -> aktuelles Datum wird ausgegeben
 rm -> remove (löschen, bei directory rm -r)
-
-
+cp -> kopieren, alter name und neuer Name erstellt backup
+Befehl > dateiname.txt -> Ausgabe in dateiname.txt
+ws -l | sort -n -> Pipes (|) trennt Befehle voneinander ab
