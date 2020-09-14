@@ -10,19 +10,22 @@ tags:
 - basics
 - shell
 - jekyll
+- markdown
 
 ---
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 1.PNG?raw=true" width="100%"/>
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 1.PNG?raw=true" width="80%"/>
 ---
 
 Aufsetzen des Lernblogs
 ---
-Ehe ich mit dem Verfassen der Beiträge begann, wollte ich unbedingt meinen Blog zum Funktionieren kriegen. Bei der Übernahme des Templates habe ich bemerkt, dass es verschiedene Jekyll-Themes gibt, die theoretisch verwendet werden können. Dies hat mich sogleich gepackt und wollte unbedingt ein schönes Layout für meinen Blog finden. Schlussendlich fiel die Wahl auf Hydeout. Auf der Seite wurde auf ein Github-Repository von zysz verlinkt, dieses habe ich dann geforkt und bei mir angepasst. Folgende Anpassungen habe ich vorgenomnen,, damit die Website funktioniert:
+
+Bei der Übernahme des bereitgestellten Templates habe ich bemerkt, dass es verschiedene Jekyll-Themes gibt, die theoretisch als Grundlage verwendet werden können. Dies hat mich sogleich gepackt und wollte unbedingt ein schönes Layout für meinen Blog finden. Schlussendlich fiel die Wahl auf [Hydeout](http://jekyllthemes.org/themes/hydeout/). Für das Aufsetzen des Blogs habe ich das Repository von [@Forestryio](https://github.com/forestryio/hydeout-jekyll-starter) geforked und bearbeitet. Folgende Anpassungen habe ich vorgenomnen,, damit die Website funktioniert:
 *	CName-file gelöscht 
 *	Baseurl im config-file durch meine URL ersetzt ('/lerntagebuch-bain')
 *	Den Branch gh-pages gelöscht (so lange ich diesen Branch und den masterbranch hatte, hat das online-Stellen komischerweise nicht geklappt….)
+  
   Folgendes habe ich angepasst:
-  *	Title, tagline, description und persönliche Angaben angepasst
+  *	Title, tagline, description und persönliche Angaben
   *	Sidebar personalisiert
   *	Favicon geändert
   
@@ -47,14 +50,15 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` + liste 3  ````|+ liste 3|
 |```` 1. Liste  ````|1. Liste|
 |```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
-|```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
-|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^2]|
+|```` <img alt="Mobile home page" src="https://github.com/rumolin/
+lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
+|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1]|
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
-|```` Ich bin eine Fussnote.[^1]  ````| Ich bin eine Fussnote.[^1]  |
+|```` Ich bin eine Fussnote.[^2]  ````| Ich bin eine Fussnote.[^2]  |
 
 
-Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gibt es unter anderem den GitHub-Flavoured-Dialekt, der allenfalls etwas anders funktioniert. Bei zukünftigen Unklarheiten werde ich also diese Seite hier besuchen: https://github.github.com/gfm/
+Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gibt es unter anderem den GitHub-Flavoured-Dialekt, der allenfalls etwas anders funktioniert. Bei zukünftigen Unklarheiten werde ich also die [GitHub-Seite](https://github.github.com/gfm/) besuchen.
 
 Unix Shell Kommandos:
 ---
@@ -65,5 +69,5 @@ Offene To Do’s bis nächstes Mal:
 [] offene Fragen klären
 [] ...
 
-[^1]: Fussnotentext am Seitenende platzieren
-[^2]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.
+[^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.
+[^2]: Fussnotentext jeweils am Ende der Seite platzieren
