@@ -1,0 +1,18 @@
+pwd -> wo bist du gerade
+ls -> Liste
+ls -l -> detaillierte Liste
+ls -lh-> detaillierte Liste inkl. Grösse
+cd-> change directory (wenn alleine, dann home)
+mkdir -> create directory
+cat -> Anzeigen von Datei (dateiname am Ende)
+head -> Anzeigen von head (dateiname am Ende)
+tail -> analog zu head
+? -> wildcard für ein charakter
+* -> wildcard für 0 oder mehrere Charakter
+mv -> bewegen, wenn Dateiname und directory, umbennenen wenn dateiname und neuer Name
+echo -> Anzeigen von Text
+variablen -> NAME= xyz; echo $NAME -> xyz wird ausgegeben
+echo $(date) -> aktuelles Datum wird ausgegeben
+rm -> remove (löschen, bei directory rm -r)
+
+
