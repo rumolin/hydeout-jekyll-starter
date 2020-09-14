@@ -51,7 +51,7 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` 1. Liste  ````|1. Liste|
 |```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
 |```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
-|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1]|
+|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
 |```` Ich bin eine Fussnote.[^2]  ````| Ich bin eine Fussnote.[^2]  |
@@ -62,8 +62,9 @@ Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gi
 Unix Shell Kommandos:
 ---
 Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Library Corpentry gemacht. Zusätzlich habe ich über die Shell ein File erstellt, um die nützlichen Befehle zu notieren. Dies ist hier abgelegt: [commands.txt](https://github.com/rumolin/lerntagebuch-bain/blob/master/commands.txt)
-Offene To Do’s bis nächstes Mal:
 
+Offene To Do’s bis nächstes Mal:
+---
 [ ] Blog Vorschau auf Hauptseite einrichten
 [ ] offene Fragen klären
 [ ] ...
