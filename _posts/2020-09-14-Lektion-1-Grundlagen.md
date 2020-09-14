@@ -47,8 +47,8 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` + liste 3  ````|+ liste 3|
 |```` 1. Liste  ````|1. Liste|
 |```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
-|```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>
-|````<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^2]|
+|```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>´´´´
+|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^2]|
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
 |```` Ich bin eine Fussnote.[^1]  ````| Ich bin eine Fussnote.[^1]  |
