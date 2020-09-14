@@ -40,6 +40,7 @@ Markdown
 ---
 Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell beschäftigt, ist Markdown. Ich kannte das vorher noch nicht und bin aber bis jetzt recht begeistert von der simplen Syntax. Folgende Übersicht habe ich erstellt:
 
+<div class=table>
 |Code|Ausgabe|
 |-----------------|-----------------|
 |```` #Überschriften Note: (je mehr # desto kleiner ````|#Überschrift1|
@@ -51,11 +52,11 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` 1. Liste  ````|1. Liste|
 |```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
 |```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
-|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
+|<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1]|
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
 |```` Ich bin eine Fussnote.[^2]  ````| Ich bin eine Fussnote.[^2]  |
-
+</div>
 
 Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gibt es unter anderem den GitHub-Flavoured-Dialekt, der allenfalls etwas anders funktioniert. Bei zukünftigen Unklarheiten werde ich also die [GitHub-Seite](https://github.github.com/gfm/) besuchen.
 
