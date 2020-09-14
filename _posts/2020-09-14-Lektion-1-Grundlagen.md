@@ -50,8 +50,7 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` + liste 3  ````|+ liste 3|
 |```` 1. Liste  ````|1. Liste|
 |```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
-|```` <img alt="Mobile home page" src="https://github.com/rumolin/
-lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
+|```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
 |<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1]|
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
@@ -65,9 +64,9 @@ Unix Shell Kommandos:
 Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Library Corpentry gemacht. Zusätzlich habe ich über die Shell ein File erstellt, um die nützlichen Befehle zu notieren. Dies ist hier abgelegt: [commands.txt](https://github.com/rumolin/lerntagebuch-bain/blob/master/commands.txt)
 Offene To Do’s bis nächstes Mal:
 
-- [ ] Blog Vorschau auf Hauptseite einrichten
-- [ ] offene Fragen klären
-- [ ] ...
+[ ] Blog Vorschau auf Hauptseite einrichten
+[ ] offene Fragen klären
+[ ] ...
 
 [^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.
 [^2]: Fussnotentext jeweils am Ende der Seite platzieren
