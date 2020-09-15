@@ -40,7 +40,7 @@ Markdown
 ---
 Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell beschäftigt, ist Markdown. Ich kannte das vorher noch nicht und bin aber bis jetzt recht begeistert von der simplen Syntax. Folgende Übersicht habe ich erstellt:
 
-<div class=table>
+
 |Code|Ausgabe|
 |-----------------|-----------------|
 |```` #Überschriften Note: (je mehr # desto kleiner ````|#Überschrift1|
@@ -56,7 +56,7 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 |```` > Zitat  ````|> Zitat|
 |```` ---   ````|---|
 |```` Ich bin eine Fussnote.[^2]  ````| Ich bin eine Fussnote.[^2]  |
-</div>
+
 
 Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gibt es unter anderem den GitHub-Flavoured-Dialekt, der allenfalls etwas anders funktioniert. Bei zukünftigen Unklarheiten werde ich also die [GitHub-Seite](https://github.github.com/gfm/) besuchen.
 
