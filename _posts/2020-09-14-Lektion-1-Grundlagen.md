@@ -19,10 +19,10 @@ tags:
 Aufsetzen des Lernblogs
 ---
 
-Bei der Übernahme des bereitgestellten Templates habe ich bemerkt, dass es verschiedene Jekyll-Themes gibt, die theoretisch als Grundlage verwendet werden können. Dies hat mich sogleich gepackt und wollte unbedingt ein schönes Layout für meinen Blog finden. Schlussendlich fiel die Wahl auf [Hydeout](http://jekyllthemes.org/themes/hydeout/). Für das Aufsetzen des Blogs habe ich das Repository von [@Forestryio](https://github.com/forestryio/hydeout-jekyll-starter) geforked und bearbeitet. Folgende Anpassungen habe ich vorgenomnen,, damit die Website funktioniert:
-*	CName-file gelöscht 
-*	Baseurl im config-file durch meine URL ersetzt ('/lerntagebuch-bain')
-*	Den Branch gh-pages gelöscht (so lange ich diesen Branch und den masterbranch hatte, hat das online-Stellen komischerweise nicht geklappt….)
+Bei der Übernahme des bereitgestellten Templates habe ich bemerkt, dass es verschiedene Jekyll-Themes gibt, die theoretisch als Grundlage verwendet werden können. Dies hat mich sogleich gepackt und wollte unbedingt ein schönes Layout für meinen Blog finden. Schlussendlich fiel die Wahl auf [Hydeout](http://jekyllthemes.org/themes/hydeout/). Für das Aufsetzen des Blogs habe ich das Repository von [@Forestryio](https://github.com/forestryio/hydeout-jekyll-starter) geforked und bearbeitet. Folgende Anpassungen habe ich vorgenomnen, damit die Website funktioniert:
+*	CNAME-file gelöscht 
+*	Base-URL im config-file durch meine URL ersetzt ('/lerntagebuch-bain')
+*	Den Branch gh-pages gelöscht (so lange ich diesen Branch und den master hatte, hat das Veröffentlichen komischerweise nicht geklappt….)
   
   Folgendes habe ich angepasst:
   *	Title, tagline, description und persönliche Angaben
