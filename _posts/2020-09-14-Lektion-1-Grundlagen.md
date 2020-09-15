@@ -66,9 +66,9 @@ Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Libr
 
 Offene To Do’s bis nächstes Mal:
 ---
-[ ] Blog Vorschau auf Hauptseite einrichten
-[ ] offene Fragen klären
-[ ] ...
+- [ ] Blog Vorschau auf Hauptseite einrichten
+- [ ] offene Fragen klären
+- [ ] ...
 
 [^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.
 [^2]: Fussnotentext jeweils am Ende der Seite platzieren
