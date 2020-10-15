@@ -43,6 +43,8 @@ Um nun eine Abfrages des Gesamtkatalogs zu machen, haben wir OAI_PMH genutzt, da
 
 ##### Installation Archives Space 2.8.0
 
+archivesspace starten: archivesspace/archivesspace.sh
+
 Die Installation und das Anmelden hat problemlos geklappt. Hier als Erinnerung für mich die URLs:
 
 * http://localhost:8080/ – the staff interface
