@@ -7,7 +7,7 @@ baseurl: '/lerntagebuch-bain'
 author:
   name: rumolin
   url: https://github.com/rumolin
-pagination: 4 
+paginate: 10
 exclude:
 - README.md
 - vendor/bundle
