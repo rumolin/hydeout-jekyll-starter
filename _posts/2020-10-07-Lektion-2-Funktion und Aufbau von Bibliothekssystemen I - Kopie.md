@@ -20,7 +20,11 @@ tags:
 #### offene Fragen aus der letzten Stunde
 
 
-Mit der bereitgestellten [Anleitung](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll) im Skript konnte ich den Static-Site-Generator Jekyll lokal installieren. Damit werden mir Änderungen lokal angezeigt und ich muss erst committen, sobald ich weiss, dass die Änderungen funktionieren. Damit sollte ich mir einige künftige Commits ersparen. Zudem aktualisiert sich mein Lernblog lokal sehr viel schneller als bei Github Pages, was ein zusätzlicher Vorteil ist. 
+Mit der bereitgestellten [Anleitung](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll) im Skript konnte ich den Static-Site-Generator Jekyll lokal installieren. Damit werden mir Änderungen lokal angezeigt und ich muss erst committen, sobald ich weiss, dass die Änderungen funktionieren. 
+
+<!--more-->
+
+Damit sollte ich mir einige künftige Commits ersparen. Zudem aktualisiert sich mein Lernblog lokal sehr viel schneller als bei Github Pages, was ein zusätzlicher Vorteil ist. 
 
 Leider hatte ich noch keine Gelegenheit, meine anderen offenen To Do's aus dem letzten Block abzuarbeiten:
   *	Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) 
@@ -89,5 +93,5 @@ Auch das Bearbeiten des [Tutorials](https://zefanjas.de/wie-man-koha-installiert
 
 #### Offene To Do’s bis nächstes Mal:
 
-- [ x] Schnellaufnahme in Koha 
-- [x ] Koha-Tutorial durcharbeiten
+- [x] Schnellaufnahme in Koha 
+- [x] Koha-Tutorial durcharbeiten

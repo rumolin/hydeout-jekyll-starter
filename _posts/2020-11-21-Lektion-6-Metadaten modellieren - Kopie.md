@@ -18,7 +18,11 @@ tags:
 
 ---
 
-Dieses Schaubild zeigt den Zusammenhang aller Programme, Tools und Software, die wir bereits in diesem Modul kennegelernt haben. Es umfasst Koha (Bibliothekssoftware), ArchivesSpace (Archivsoftware) sowie DSpace als Software für Open Access und Open Data. Über die OAI-PMH-Schnittstelle lassen sich jeweils Daten abrufen, das machen wir mit VuFindHarvest (OAI-Harvester). Diese Daten liegen dann je nach Software entweer als MARC21-XML (Koha), EAD (ArchivesSpace) oder Dublin Core (DSpace) vor. Alle diese Formate können wir mit marcEdit behandeln und einen Crosswalk durchführen, so dass wir schliesslich bei MARC21-XML landen. 
+Dieses Schaubild zeigt den Zusammenhang aller Programme, Tools und Software, die wir bereits in diesem Modul kennegelernt haben. Es umfasst Koha (Bibliothekssoftware), ArchivesSpace (Archivsoftware) sowie DSpace als Software für Open Access und Open Data. Über die OAI-PMH-Schnittstelle lassen sich jeweils Daten abrufen, das machen wir mit VuFindHarvest (OAI-Harvester). 
+
+<!--more-->
+
+Diese Daten liegen dann je nach Software entweer als MARC21-XML (Koha), EAD (ArchivesSpace) oder Dublin Core (DSpace) vor. Alle diese Formate können wir mit marcEdit behandeln und einen Crosswalk durchführen, so dass wir schliesslich bei MARC21-XML landen. 
 
 Diesen Schritt behandeln wir in diesem Unterrichtsblock, in den nächsten Blöcken werden wir mittels VuFind auf Basis von Solr noch Discovery-Systeme kennenlernen. 
 
@@ -34,6 +38,8 @@ Es gibt zahlreiche Übertragungsprotokolle im Bibliotheks- und Archivbereich. Dr
 
 Z39.50 und SRU eigenen sich besonders für Live-Abfragen, wohingegen OAI-PMH vor allem auf grössere Datenbezüge abzielt. SRU und OAI-PMH lassen sich über die URL abfragen, während Z39.50 eine zusätzliche Software benötigt. 
 
+---
+
 ##### Vorgehen Harvesting
 
 Metadaten werden über OAI-PMG "geernet", also über die Schnittstelle. Wir verwenden VuFindHarvest, ein OAI-Harvester aus dem VuFind-Projekt. Es kann nur OAI-PMH abfragen. 
@@ -46,6 +52,8 @@ Vorgehen:
 OAI-PMH Endpoints: Da es bei mir langsam etwas unübersichtlich wurde, welche Angaben man wo wofür und warum braucht, habe ich ein Cheat-Sheet erstellt: (einfügen!!) Dort sind auch alle OAI-PMH Endpoints aufgeführt.
 
 Unterschied Export / Abfrage OAI-Schnittstelle: OAI liefert Daten anders aus, als wenn man Daten beispielsweise aus DSpace exportiert. OAI-Schnittstelle hat noch Infos drumherum. Deshalb andere Darstellung der Daten. Muss beim Experimentieren bedenkt werden!
+
+---
 
 ###### Befehle für Harvesting:
 - Koha:
@@ -63,6 +71,8 @@ php bin/harvest_oai.php --url=http://localhost:8082/ --metadataPrefix=oai_ead nv
 php bin/harvest_oai.php --url=http://demo.dspace.org/oai/request --metadataPrefix=oai_dc --set=com_10673_1 nv_dspace'''
 
 Die Übung hat noch Korrektur der ArchivesSpace-Dateien problemlos geklappt. Ich habe für alles je ein neues Verzeichnis erstellt und die Dateien dort abgespeichert. 
+
+---
 
 ###### Crosswalks
 

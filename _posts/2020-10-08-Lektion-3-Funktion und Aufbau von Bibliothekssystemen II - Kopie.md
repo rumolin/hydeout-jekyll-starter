@@ -19,6 +19,8 @@ tags:
 
 Der Import der Schnellaufnahme in Koha hat problemlos funktioniert. Offene Fragen oder ähnliches gibt es dieses Mal nicht. 
 
+<!--more-->
+
 ---
 
 #### Namespaces
