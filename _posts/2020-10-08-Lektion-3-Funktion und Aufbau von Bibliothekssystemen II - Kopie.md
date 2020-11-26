@@ -55,5 +55,11 @@ Die Installation und das Anmelden hat problemlos geklappt. Hier als Erinnerung f
 
 Bisauf Solr admin console kann ich mir unter allem ungefähr etwas vorstellen.
 
+über schnittstellen: wir greifen auf Daten zu, auf die wir sonst keinen Zugriff hätten. die nicht in unserem eigenen System liegen. 
+XSL = Scriptsprache, um XML zu manipulieren XST-> Transformation
+MARCXML ist MARC21, MARC gibt es auch noch, ist Vorläufer von MARC21
 
+crosswalk: gängiger Begriff im IT-Bereich, Information Science, um Konvertierung von Metadatenstandards in anderen zu beschreiben. beinhaltet Regeln, wie Elemente und ggf. Werte zugeordnet oder verändert werden müssen. Nicht einfach, weil Standards erzwingen, dass Entscheidungen getroffen werden müssen, in welches Feld. Nicht immer einfach. So gehen manchmal Inhalte oder Zusammehhänge verloren. Prozess von Zuordnung von Elementen nennt man Mapping. 
+
+ursprünglich für windows entwickelt, damit man unter linux laufen lassen kann, muss man laufzeitumgebung installieren (mono) damit das läuft. schriftenpaket um utf-8 zeichen darstellen zu können ist schriftart noto. 
 

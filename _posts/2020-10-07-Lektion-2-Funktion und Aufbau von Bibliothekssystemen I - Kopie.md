@@ -89,5 +89,5 @@ Auch das Bearbeiten des [Tutorials](https://zefanjas.de/wie-man-koha-installiert
 
 #### Offene To Do’s bis nächstes Mal:
 
-- [ ] Schnellaufnahme in Koha 
-- [ ] Koha-Tutorial durcharbeiten
+- [ x] Schnellaufnahme in Koha 
+- [x ] Koha-Tutorial durcharbeiten

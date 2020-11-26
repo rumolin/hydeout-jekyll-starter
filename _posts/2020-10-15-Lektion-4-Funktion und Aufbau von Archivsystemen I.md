@@ -39,6 +39,27 @@ Um eine ungefähre Ahnung davon zu kriegen, wie Archive arbeiten, war es wichtig
 
 ISAD(G) hat 26 Verzeichnungselemente in 7 Informationsbereichen (Identifikation, Kontext, Inhalt und innere Ordnung, Zugangs- und Benutzungsbedingungen, Sachverwandte Unterlagen, Anmerkungen und Kontrolle) Von besonderer Bedeutung sind die 6 Pflichtfelder Signatur, Titel, Provenienz, Entstehungszeitraum, Umfang und Verzeichnisstufe. Wie gesagt: Archive arbeiten so, dass der Entstehungszusammenhang (Provenienz) eine besondere Bedeutung hat. Deshalb wird nicht wirklich das Medium beschrieben, sondern eher der/die Urheber\*in, respektive Aktenbilder\*in. 
 
+Als Stufen kennt ISAD(G) das Archiv, den Bestand, die Serie, das Dossier und das Dokument. Je nach Grösse des Archivs kann nach dem Archiv noch in Abteilungen unterteilt werden. 
+
+**Pflichtelemente und empfohlene Elemente auf den verschiedenen Verzeichnistufen:**
+
+|Verzeichnungselemente|Archiv|Bestand|Serie|Dossier|Dokument|
+|---|---|---|---|---|---|
+|Signatur|p|p|E|p|p|
+|Titel|p|p|p|p|p|
+|Entstehungszeitraum|p|p|E|p|p|
+|Verzeichnisstufe|p|p|p|p|p|
+|Umfang|p|p||||
+|Provenienz|p|p|||E|[^1]
+
+Quelle: (Schweizerische Richtlinie für die Umsetzung von ISAD(G))[https://vsa-aas.ch/wp-content/uploads/2015/06/Richtlinien_ISAD_G_VSA_d.pdf]
+
+---
+
+[^1] p steht für Pflichtelement, E steht für empfohlenes Element
+
+---
+
 ##### Grenzen von ISAD(G) 
 
 Folgende Probleme zeigen sich mit ISAD(G):
@@ -70,11 +91,11 @@ Hier eine ganz kurze Zusammenfassung aus der Übung: die beiden betrachteten Arc
 
 ---
 
-archivesspace ist ein Open-Source-Archivinformationssystem mit (ich denke beachtlichen) 400 zahlenden Mitgliedern. 
-Bei der Übung haben wir frei nach Gefühl einige Archivobjekte aufgenommen, ohne gross auf Regeln oder Abläufe zu achten. Ich war da ehrlich gesagt etwas verloren, vor allem auch, weil mein Public Interface nicht funktionieren wollte. Zuhause habe ich dann in aller Ruhe nochmals diese (Kurzanleitung)[https://guides.nyu.edu/ld.php?content_id=23198351] studiert und nachher war einiges klarer. Ich habe in der Nachbereitung dann folgende Ressource nach diesem Prinzip aufgenommen: 
+ArchivesSpace ist ein Open-Source-Archivinformationssystem mit 400 zahlenden Mitgliedern. 
+Bei der Übung haben wir frei nach Gefühl einige Archivobjekte aufgenommen, ohne gross auf Regeln oder Abläufe zu achten. Ich war da ehrlich gesagt etwas verloren, vor allem auch, weil mein Public Interface nicht funktionieren wollte. In der Nachbereitung habe ich dann in aller Ruhe nochmals diese (Kurzanleitung)[https://guides.nyu.edu/ld.php?content_id=23198351] studiert und nachher war einiges klarer. Ich habe dann Ressourcen nach diesem Prinzip und so gut wie möglich nach ISAD(G) aufgenommen. Das war gar nicht so einfach, einerseits waren sämtliche Begriffe, die ich von ISAD(G) kannte (Serie, Bestand, Dossier, Dokument usw.) in ArchivesSpace nicht auf den ersten Blick ersichtlich und andererseits hat bei meiner Installation von ArchivesSpace kein einziges Dropdown-Menü funktioniert, wodurch ich viele nötige Einstellungen nicht so vornehmen konnte, wie geplant. 
+ Am Ende habe ich das Vorgehen mithilfe der vorher erwähnten Kurzanleitung aber gut verstanden. 
 
-[to be continued...]
-Als besonderes Learning ist folgendes zu verbuchen: Bei der Accession wird ein Datensatz zur Erwerbung angelegt. Daraus dann die konkreten Ressourcen. 
+
 
 
 
