@@ -36,7 +36,7 @@ Für das Aufsetzen des Blogs habe ich das Repository von [@Forestryio](https://g
   *	Favicon geändert
   
 Folgende Änderungen am Blog sind noch geplant: 
-  *	Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) 
+  *	Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) (erledigt)
   *	About, Thema 1, Thema 2 und Post Formats (Menüpunkte in der Sidebar) sollen im Laufe der Zeit zu Überthemen umbenannt werden, worüber passende Blogposts jeweils gefunden werden können. 
   *	Evt. Neues CNAME-File erstellen
   
@@ -51,7 +51,7 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 
 |Code|Ausgabe|
 |-----------------|-----------------|
-|```` #Überschriften Note: (je mehr # desto kleiner ````|#Überschrift1|
+|```` #Überschriften Note: (je mehr # desto kleiner ````|# Überschrift1|
 |```` *kursiv* ````|*kursiv*|
 |```` **fett** ````|**fett**|
 |```` - liste 1 ````| - liste 1|
@@ -78,8 +78,8 @@ Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Libr
 
 #### Offene To Do’s bis nächstes Mal:
 
-- [ ] Blog Vorschau auf Hauptseite einrichten
-- [ ] offene Fragen klären
+- [x] Blog Vorschau auf Hauptseite einrichten
+- [x] offene Fragen klären
 
 ---
 [^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.

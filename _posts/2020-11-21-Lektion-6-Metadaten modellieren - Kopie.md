@@ -6,10 +6,11 @@ comments: false
 sidebar_link: true
 categories: 
 tags: 
-- archivesspace
-- ISAD(G)
-- EAD
-- RIC
+- oai-pmh
+- sru
+- Z39.50
+- Harvesting
+- crosswalks
  
 
 ---
@@ -56,19 +57,20 @@ Unterschied Export / Abfrage OAI-Schnittstelle: OAI liefert Daten anders aus, al
 ---
 
 ###### Befehle für Harvesting:
+
 - Koha:
-''' $ mkdir nv_koha
+```` $ mkdir nv_koha
 cd ~/vufindharvest-4.0.1
-php bin/harvest_oai.php --url=http://bibliothek.meine-schule.org/cgi-bin/koha/oai.pl --metadataPrefix=marcxml nv_koha'''
+php bin/harvest_oai.php --url=http://bibliothek.meine-schule.org/cgi-bin/koha/oai.pl --metadataPrefix=marcxml nv_koha ```` 
 
 - ArchivesSpace:
- '''mkdir nv_archivesspace
+ ````$ mkdir nv_archivesspace
  cd ~/vufindharvest-4.0.1
-php bin/harvest_oai.php --url=http://localhost:8082/ --metadataPrefix=oai_ead nv_archivesspace '''
+php bin/harvest_oai.php --url=http://localhost:8082/ --metadataPrefix=oai_ead nv_archivesspace````
 
 - DSpace
-'''mkdir nv_dspace
-php bin/harvest_oai.php --url=http://demo.dspace.org/oai/request --metadataPrefix=oai_dc --set=com_10673_1 nv_dspace'''
+```` $ mkdir nv_dspace
+php bin/harvest_oai.php --url=http://demo.dspace.org/oai/request --metadataPrefix=oai_dc --set=com_10673_1 nv_dspace````
 
 Die Übung hat noch Korrektur der ArchivesSpace-Dateien problemlos geklappt. Ich habe für alles je ein neues Verzeichnis erstellt und die Dateien dort abgespeichert. 
 

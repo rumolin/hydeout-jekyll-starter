@@ -7,10 +7,10 @@ sidebar_link: true
 categories: 
 tags: 
 - archivesspace
-- ISAD(G)
-- EAD
-- RIC
- 
+- dspace
+- open acces
+- open source
+- forschungsinformation
 
 ---
 

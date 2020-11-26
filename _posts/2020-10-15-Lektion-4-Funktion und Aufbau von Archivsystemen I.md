@@ -22,7 +22,7 @@ tags:
 
 Während der Stunde habe ich bei der Übung mit Archivesspaces eine Fehlermeldung unter dem public Interface erhalten. Gaby hat sich zum Glück meiner Überforderung angenommen und mir erklärt, wie ich mit dem folgenden Befehl meine log-files auslesen kann:
 
-grep -B 100 -A 100 "WARNING: ERROR" archivesspace.out
+````grep -B 100 -A 100 "WARNING: ERROR" archivesspace.out````
 
 <!--more-->
 
