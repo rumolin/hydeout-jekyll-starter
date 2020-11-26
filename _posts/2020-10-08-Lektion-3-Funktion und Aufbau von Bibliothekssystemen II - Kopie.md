@@ -11,7 +11,7 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 4.PNG?raw=true" width="70%"/>
+<img alt="Koha_Screenshot" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 4.PNG?raw=true" width="70%"/>
 
 ---
 

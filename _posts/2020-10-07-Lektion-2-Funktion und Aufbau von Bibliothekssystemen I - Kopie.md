@@ -13,7 +13,7 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 2.PNG?raw=true" width="70%"/>
+<img alt="bundle jekyll" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 2.PNG?raw=true" width="70%"/>
 
 ---
 

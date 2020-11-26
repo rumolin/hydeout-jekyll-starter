@@ -14,7 +14,7 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 5.PNG?raw=true" width="70%"/>
+<img alt="Error" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 5.PNG?raw=true" width="70%"/>
 
 ---
 

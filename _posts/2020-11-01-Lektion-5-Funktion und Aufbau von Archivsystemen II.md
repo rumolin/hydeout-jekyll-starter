@@ -14,16 +14,9 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 5.PNG?raw=true" width="70%"/>
+<img alt="DSpace" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 6.PNG?raw=true" width="70%"/>
 
 ---
-
-##### offene Fragen und To Do's
-
----
-
-Keine offenen Fragen und To Do's aus der letzten Stunde. 
-
 
 ##### Deamon
 
