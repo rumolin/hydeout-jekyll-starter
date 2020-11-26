@@ -14,7 +14,7 @@ tags:
 
 ---
 
-<img alt="Crosswalk" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 7.PNG?raw=true" width="70%"/>
+<img alt="Crosswalk" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 7.png?raw=true" width="70%"/>
 
 ---
 

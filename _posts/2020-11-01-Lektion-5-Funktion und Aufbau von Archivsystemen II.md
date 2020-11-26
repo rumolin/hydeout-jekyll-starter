@@ -14,7 +14,7 @@ tags:
 
 ---
 
-<img alt="DSpace" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 6.PNG?raw=true" width="70%"/>
+<img alt="DSpace" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 6.png?raw=true" width="70%"/>
 
 ---
 
