@@ -98,26 +98,25 @@ Reconciling: Daten von unseren Daten können mit externen Services abgeglichen w
 Wir nutzen die Funktion Templating Exporter um MARCXML zu erstellen. Als erstes wird die Voreinstellung von JSON zu MARCXML geändert und das Prefix wie angegeben eingetragen. Templating können wir für alles nutzen, das nicht nativ im OpenRefine funktioniert. 
 
 ###### Aufgabe 1: 
-* leader a22 uuu 4500 was bedeutet das wohl? keine Transformationsregeln, hart codiert (endlich weiss ich, was das bedeutet...) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
-* Im Feld 001 wird URL ersetzt durch voreingegebenes in Klammer, also nichts in diesem Fall und mit escape (xml) sichergestellt, dass es kein nicht valides XML-Zeichen drin hat, wird dann ersetzt. 
+* leader a22 uuu 4500 hier liegen keine Transformationsregeln vor, ist hart codiert (das bedeutet, dass Text 1:1 übernommen wird, es liegen keien Transformationsregeln vor) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
+* Im Feld 001 wird URL ersetzt durch voreingegebenes in Klammer und mit escape (xml) sichergestellt, dass es kein nicht valides XML-Zeichen drin hat, wird dann ersetzt oder gar nicht abgebildet. 
 * Im Feld 022 werden ISSNs eingefügt (escape wird auch genutzt)
-* Im Feld 100 werden Autor*innen werden bei | getrennt und der allererste wird eingefügt (wiederum mit escape kontrolliert) -> Dieses Feld ist ohnehin nur für 1 Autor*in machbar
+* Im Feld 100 werden Autor*innen werden bei | getrennt und der allererste wird eingefügt (wiederum mit escape kontrolliert) -> Dieses Feld ist ohnehin nur für 1 Autor*in gedacht
 * Im Feld 245 wird Titel eingefügt mit escape xml. 
-* was passiert im Feld 700? wir haben for- Funktion, extrahiert (slice) wird alles ab Element 1 (also das erste Element 0 wird weggelassen...)  -> GREL ist eigene Sprache, allerdings angelehnt an Java, deshalb spicke ich dort jeweils, praktische Sache. Gemäss Gaby gibt es aber gerade bei Slice einen komischen Unterschied, den ich in ihrem Lerntagebuch aber nicht ganz gepeilt habe... Vielleicht frage ich noch nach.  Ergebnisse aus dieser Schleifen-Funktion werden in Variable v geschrieben . Dann hartcodierter Text-String (mit "") und Variable v wird eingefügt mit escape.  
+* was passiert im Feld 700? wir haben for- Funktion, extrahiert (slice) wird alles ab Element 1 (also das erste Element 0 wird weggelassen...)  -> GREL ist eigene Sprache, allerdings angelehnt an Javascript. Ergebnisse aus dieser Schleifen-Funktion werden in Variable v geschrieben . Dann hartcodierter Text-String (mit "") und Variable v wird eingefügt mit escape.  
 
-Mit der Erklärung, dass slice(1) das erste Element wegschneidet, hatte ich ziemlich zu kämpfen, da mit dem ersten Element ja eigentlich in der Informatik oft 0 gemeint ist. Mit dieser Erklärung hat es dann geklappt: https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/slice Ab Index 1 wird alles extrahiert, wodurch wiederum das erste Element [0] weggeschnitten wird. So wie ich das verstehe, funktioniert das aber genau so wie Javascript (anders als in der Vorlesung besprochen) und dieses DOkument [Link einfügen] erklärt das gleich. Ich hoffe also, ich hab das richtig verstanden und ärgere mich, dass ich wieder einmal alles auf den letzten Drücker erledige, so dass ich keine Gelegenheit mehr habe, eine Frage zu stellen. Tja. Pech. 
+Mit der Erklärung, dass ````slice(1)```` das erste Element wegschneidet, hatte ich ziemlich zu kämpfen, da mit dem ersten Element ja eigentlich in der Informatik oft 0 gemeint ist. Ab Index 1 wird alles extrahiert, wodurch wiederum das erste Element ````[0]```` weggeschnitten wird. So wie ich das verstehe, funktioniert das aber genau so wie Javascript (anders als in der Vorlesung besprochen) und dieses [Dokument](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) und [das hier](https://code4libtoronto.github.io/2018-10-12-access/GoogleRefineCheatSheets.pdf) erklären das gleich. Ich hoffe also, ich hab das richtig verstanden und ärgere mich, dass ich wieder einmal alles auf den letzten Drücker erledige, so dass ich keine Gelegenheit mehr habe, eine Frage zu stellen. Tja. Pech. 
 
 ###### Übung 2: 
 
-Habe mich an der Sprache versucht und folgendes fabriziert:
+Für Übung 2 habe ich nach dem Vorbild von der [Library of Congress](https://www.loc.gov/marc/bibliographic/bd041.html) einen Datensatz versucht zu erstellen. Ich habe mich an der Sprache versucht und folgendes fabriziert:
 
-<datafield tag="041" ind1="0" ind2=" ">
+````<datafield tag="041" ind1="0" ind2=" ">
 <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
-</datafield>
+</datafield>````
 
-Endlich machen für einen MARC21-Neuling wie mich auch die Indikatoren als Attribute Sinn: 0 bedeutet, es handelt sich um keine Übersetzung. Attribute liefern also noch mehr Informationen. https://www.loc.gov/marc/bibliographic/bd041.html Analog verhält es sich mit den Subfieldcodes. 
+Endlich machen für einen MARC21-Neuling wie mich auch die Indikatoren als Attribute Sinn: 0 bedeutet, es handelt sich um keine Übersetzung. Attribute liefern also noch mehr Informationen.  Analog verhält es sich mit den Subfieldcodes. 
 
-Bei leeren Zellen 
 
 
 
