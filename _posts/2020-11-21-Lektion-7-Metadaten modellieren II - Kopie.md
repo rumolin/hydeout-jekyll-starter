@@ -26,6 +26,8 @@ OpenRefine: Freies Open Source Tool um mit "Messy Data" zu arbeiten.
 - dient der Analyse, Bereinigung, Konvertierung und Anreicherung von Daten
 - wird in der Regel lokal auf einem Computer installiert und im Browser bedient, aber auch auf Server. Hat aber keine Personenverwaltung und dementsprechend keinen Schutz, benötigt also organisatorische Absprachen, um Programm wirklich zu nutzen. 
 
+<!--more-->
+
 Wofür ist OpenRefine?
 - Überblick über Daten verschaffen
 - Inkonsistenzen in Datensets lösen und entdecken, beispielsweise Datenformat standardisieren
@@ -67,19 +69,20 @@ Beim Dropdown-Menü auf der ersten Spalte (all) können Spalten entfernt, anders
 
 GREL als Akronym für General Refine Expression Language. Mit Facets, Filtern und Clustern können wir bereits einiges an den Daten verändern. Trotzdem gibt es einige Dinge, die sich dadurch nicht erreichen lassen, beispielsweise mehrere Spalten aus einer machen, Daten standardisieren, ohne sie sinngemäss zu verändern oder bestimmte Teile der Datensätze zu extrahieren. Dafür braucht es "Transformations". Für Transformations gibt es eine spezielle Sprache, genannt GREL . Es gibt beispielsweise
 
-* value.toUppercase()
-* value.toLowercase()
-* value.toTitlecase() (erster Buchstabe gross, Rest klein)
-* value.trim()
-* value.toDate("dd/MM"yyyy")
-* value.toString("dd MMMM yyyy")
-* value.contains("test") liefert Boolean Ausdruck zurück-> if(value.contains("test"), "Test data", value) ersetzt einen Zellenwert mit den Worten "Test Data" wenn der Wert in der Zelle den tring "test" irgendwo beinhaltet. 
+value.toUppercase() | schreibt alles gross
+value.toLowercase() | schreibt alles klein
+value.toTitlecase() | erster Buchstabe gross, Rest klein
+value.trim() |trimmt String/wert
+value.toDate("dd/MM"yyyy") | gibt Datenformat an 
+value.toString("dd MMMM yyyy") | wandelt Datum in String nach vorgegebenen Format um
+value.contains("test") | liefert Boolean Ausdruck zurück 
+if(value.contains("test"), "Test data", value) | ersetzt einen Zellenwert mit den Worten "Test Data" wenn der Wert in der Zelle den tring "test" irgendwo beinhaltet. 
 
 In OpenRefine gibt es auch Arrays. Diese sind Listen von Werten, die wie gewohnt in [] präsentiert werden. Die Werte werden jeweils von "" abgeschlossen (bei Strings) und durch Kommas getrennt. Mit GREL-Expressions können Arrays transformiert werden:
-* value.split(",")
-* value.split(",").sort() würde das splitten und alphabetisch sortieren A-Z
-* value.split(",")[0] gibt ersten Listeneintrag aus
-* value.split(",").sort().join(",") würde Array wieder zusammenführen, allerdings ist der Eintrag dann alphabetisch sortiert. 
+* value.split(",") | trennt bei Komma
+* value.split(",").sort() | würde das splitten und alphabetisch sortieren A-Z
+* value.split(",")[0] | gibt ersten Listeneintrag aus
+* value.split(",").sort().join(",") | würde Array wieder zusammenführen, allerdings ist der Eintrag dann alphabetisch sortiert. 
 
 Daten, die mit OpenRefine bearbeitet wurden, können am Ende exportiert werden. 
 
@@ -98,14 +101,15 @@ Reconciling: Daten von unseren Daten können mit externen Services abgeglichen w
 Wir nutzen die Funktion Templating Exporter um MARCXML zu erstellen. Als erstes wird die Voreinstellung von JSON zu MARCXML geändert und das Prefix wie angegeben eingetragen. Templating können wir für alles nutzen, das nicht nativ im OpenRefine funktioniert. 
 
 ###### Aufgabe 1: 
-* leader a22 uuu 4500 hier liegen keine Transformationsregeln vor, ist hart codiert (das bedeutet, dass Text 1:1 übernommen wird, es liegen keien Transformationsregeln vor) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
-* Im Feld 001 wird URL ersetzt durch voreingegebenes in Klammer und mit escape (xml) sichergestellt, dass es kein nicht valides XML-Zeichen drin hat, wird dann ersetzt oder gar nicht abgebildet. 
-* Im Feld 022 werden ISSNs eingefügt (escape wird auch genutzt)
-* Im Feld 100 werden Autor*innen werden bei | getrennt und der allererste wird eingefügt (wiederum mit escape kontrolliert) -> Dieses Feld ist ohnehin nur für 1 Autor*in gedacht
-* Im Feld 245 wird Titel eingefügt mit escape xml. 
-* was passiert im Feld 700? wir haben for- Funktion, extrahiert (slice) wird alles ab Element 1 (also das erste Element 0 wird weggelassen...)  -> GREL ist eigene Sprache, allerdings angelehnt an Javascript. Ergebnisse aus dieser Schleifen-Funktion werden in Variable v geschrieben . Dann hartcodierter Text-String (mit "") und Variable v wird eingefügt mit escape.  
+leader a22 uuu 4500 | hier liegen keine Transformationsregeln vor, ist hart codiert (das bedeutet, dass Text 1:1 übernommen wird, es liegen keien Transformationsregeln vor) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
+Im Feld 001 | wird URL ersetzt durch voreingegebenes in Klammer und mit escape (xml) sichergestellt, dass es kein nicht valides XML-Zeichen drin hat, wird dann ersetzt oder gar nicht abgebildet. 
+Im Feld 022 | werden ISSNs eingefügt (escape wird auch genutzt)
+Im Feld 100 | werden Autor*innen werden bei \| getrennt und der allererste wird eingefügt (wiederum mit escape kontrolliert). Dieses Feld ist ohnehin nur für 1 Autor*in gedacht
+Im Feld 245 | wird Titel eingefügt mit escape xml. 
+Im Feld 700 | wir haben for- Funktion, extrahiert (slice) wird alles ab Element 1 (also das erste Element 0 wird weggelassen...) Ergebnisse aus dieser Schleifen-Funktion werden in Variable v geschrieben . Dann hartcodierter Text-String (mit "") und Variable v wird eingefügt mit escape.  
 
-Mit der Erklärung, dass ````slice(1)```` das erste Element wegschneidet, hatte ich ziemlich zu kämpfen, da mit dem ersten Element ja eigentlich in der Informatik oft 0 gemeint ist. Ab Index 1 wird alles extrahiert, wodurch wiederum das erste Element ````[0]```` weggeschnitten wird. So wie ich das verstehe, funktioniert das aber genau so wie Javascript (anders als in der Vorlesung besprochen) und dieses [Dokument](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) und [das hier](https://code4libtoronto.github.io/2018-10-12-access/GoogleRefineCheatSheets.pdf) erklären das gleich. Ich hoffe also, ich hab das richtig verstanden und ärgere mich, dass ich wieder einmal alles auf den letzten Drücker erledige, so dass ich keine Gelegenheit mehr habe, eine Frage zu stellen. Tja. Pech. 
+GREL ist eigene Sprache, allerdings angelehnt an Javascript. 
+Mit der Erklärung, dass ````slice(1)```` das erste Element wegschneidet, hatte ich ziemlich zu kämpfen, da mit dem ersten Element ja eigentlich in der Informatik oft 0 gemeint ist. Ich habe es mir dann folgendermassen erklärt: Ab Index 1 wird alles extrahiert, wodurch das erste Element ````[0]```` weggeschnitten wird. So wie ich das verstehe, funktioniert das aber genau so wie Javascript (anders als in der Vorlesung besprochen) und dieses [Dokument](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) und [das hier](https://code4libtoronto.github.io/2018-10-12-access/GoogleRefineCheatSheets.pdf) erklären das gleich. Ich hoffe also, ich hab das richtig verstanden und ärgere mich, dass ich wieder einmal alles auf den letzten Drücker erledige, so dass ich keine Gelegenheit mehr habe, eine Frage zu stellen. 
 
 ###### Übung 2: 
 
