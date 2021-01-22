@@ -115,11 +115,28 @@ Mit der Erklärung, dass ````slice(1)```` das erste Element wegschneidet, hatte 
 
 Für Übung 2 habe ich nach dem Vorbild von der [Library of Congress](https://www.loc.gov/marc/bibliographic/bd041.html) einen Datensatz versucht zu erstellen. Ich habe mich an der Sprache versucht und folgendes fabriziert:
 
-````<datafield tag="041" ind1="0" ind2=" ">
+````
+<datafield  tag="041" ind1="0" ind2=" ">
 <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
-</datafield>````
+</datafield>
+````
 
 Endlich machen für einen MARC21-Neuling wie mich auch die Indikatoren als Attribute Sinn: 0 bedeutet, es handelt sich um keine Übersetzung. Attribute liefern also noch mehr Informationen.  Analog verhält es sich mit den Subfieldcodes. 
+
+###### leere Werte
+
+Es kann Probleme mit dem Template geben, wenn gewisse Zellen keinen Eintrag haben, beispielsweise, wenn ein Datensatz kein Titel hat. Das ergäbe beispielsweise ein leeres XML-Element. Das ist an sich schon nicht so schön und bei bestimmten Abfragen kann es sein, dass leeres Element dann ein technisches NULL erhält. Wenn man Templating-Funktion nutzt, soll dann gezielt Regeln geschaffen werden für leere Zellen oder Zellen mit dem Wert NULL. Zum Beispiel ein leerer String einfügen, wenn TItelfeld leer ist. 
+
+````
+{{forNonBlank(
+    cells['Titel'].value,
+    v,
+    '<title>' + v + '</title>',
+    ''
+)}}
+````
+
+
 
 
 

@@ -9,7 +9,7 @@ tags:
 - OpenRefine
 - GREL
 - Metadaten
- 
+- Vufind
 
 ---
 
@@ -19,6 +19,8 @@ tags:
 - evt. SWORD nachtragen DSpace und RSS-Feed
 - Import und Export bei ArchivesSpace sei nie verlustfrei ist etwas übertrieben, XML lässt sich technisch überprüfen, ob sauber. In der Praxis ist es aber so, dass es oft nicht verlustfrei ist. Gute Praxis wäre mindestens validieren, damit Form stimmt. 
 - Verlustfreie Konvertierung ist möglich, wenn das Zielformat mehr Möglichkeiten bietet als das Ausgangsformat, also z.B. von DC zu MARC21. Es verschwinden dann zumindest keine Daten, es geht nicht verloren, obwohl manchmal Annahmen getroffen werden mussten. 
+
+<!--more-->
 
 ##### Nachtrag von OpenRefine
 
@@ -96,6 +98,6 @@ Die Installation war eine schwere Geburt. Beim Installationstermin musste ich le
 Dann Java 8 installieren:
 ```` sudo apt install -y openjdk-8-jdk ````
 
-Alle Schritte gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both) bis und mit dem Starten von Solr nochmals durchgeführt und wow, schon läufts wie geschmiert und ohne Probleme. Alle Konfigurationsschritte auf (http://localhost/vufind/Install/Home) konnte ich mir sparen, da ich das schon durchgeführt hatte. Nun klappte auch der Import der Beispieldaten problemlos: 
+Alle Schritte gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both) bis und mit dem Starten von Solr nochmals durchgeführt und wow, schon läufts wie geschmiert. Alle Konfigurationsschritte auf (http://localhost/vufind/Install/Home) konnte ich mir sparen, da ich das schon durchgeführt hatte. Nun klappte auch der Import der Beispieldaten problemlos: 
 
 <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 11.PNG?raw=true" width="70%"/>

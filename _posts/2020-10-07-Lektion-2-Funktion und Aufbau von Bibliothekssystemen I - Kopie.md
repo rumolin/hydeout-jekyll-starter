@@ -38,7 +38,7 @@ Die Übungen in der Stunde zu Github haben mir keine Mühe bereitet, im Modul Dy
 
 #### MARC 21 und Dublin Core
 
-Da ich Metadatenstandards nur so mässig spannend finde (dünnes Eis, das ist mir bewusst...) und mich dementsprechend in WOR nur mit dem Nötigsten auseinandergesetzt habe, versuche ich, dieses Thema hier etwas breiter aufzugreifen. 
+Da ich Metadatenstandards und -formate nur so mässig spannend finde (dünnes Eis, das ist mir bewusst...) und mich dementsprechend in WOR nur mit dem Nötigsten auseinandergesetzt habe, versuche ich, dieses Thema hier etwas breiter aufzugreifen. 
 
 ---
 
@@ -68,7 +68,7 @@ Und hier mein Beispiel für eine HTML-Website:
 
 MARC21 ist der international verbreitete Metadaten-Standard, der 1999 von der Library of Congress gebründet wurde. Hauptzweck ist die Übertragung von bibliographischen Daten zwischen Bibliotheken. MARC liefert das Protokoll, du das bibliografische Informationen ausgetauscht werden können. Die Datenelemente bilden die Grundlage für die meisten Bibliothekskataloge [(Wikipedia, 2020)](https://de.wikipedia.org/wiki/Machine-Readable_Cataloging). Fremddatenübernahmen sind somit einfacher zu gestalten, setzt aber voraus, dass alle teilnehmenden Bibliotheken gleiche oder ähnliche Katalogisierungsregeln sowie ein einheitliches Datenformat, bzw. Austauschformat verwenden [Gantert (2016)](https://recherche.nebis.ch/primo-explore/fulldisplay?docid=ebi01_prod010601549&context=L&vid=NEBIS&lang=de_DE&search_scope=default_scope&adaptor=Local%20Search%20Engine&isFrbr=true&tab=default_tab&query=any,contains,gantert%20bibliothekarisches%20grundwissen&sortby=date&facet=frbrgroupid,include,320387376&offset=0). In der Praxis ist dies gemäss Folien anders, wegen den unterschiedlichen Regeln und der Möglichkeit, eigene Felder zu belegen, scheint die Verwendung stark vom vermeintlichen Standard abzuweichen. 
 
-MARC21 soll voraussichtlich durch BIBFRAME (basiered auf RDF) abgelöst werden. 
+MARC21 soll voraussichtlich durch BIBFRAME (basiered auf RDF) abgelöst werden. Etwas genauer wird das Thema in (diesem Blogpost)[] behandelt 
 
 ---
 
