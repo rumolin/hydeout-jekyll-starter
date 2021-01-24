@@ -36,7 +36,7 @@ Solr hat eine integrierte Suchoberfläche in der Adminoberfläche, zum Nachstell
 
 ---
 
-##### gewisse Unterschiede und Begriffsdefinitionen
+##### Unterschiede Suchindex und Datenbank
 
 Zur genaueren Unterscheidung zwischen Datenbank und Suchindex haben wir uns die beiden Systeme anhand konkreter Beispiele etwas genauer angeschaut. Grundsätzlich wird beides mit Daten gespeist, jedoch haben die Systeme unterschiedliche Schwerpunkte. 
 
@@ -46,6 +46,7 @@ lexikalische Suche (Begriff wird mit Grammatik verstanden und dementsprechend be
 keine Konsistenzprüfung (Suchindex hat keine Kontrolle über Konsistenz, nicht geeignet für persistente Datenspeicherung)| Transaktionssicherheit (Abbruch der Übertragung usw. hat keine Auswirkung auf Datenstand)
 statische Daten | veränderliche Daten
 **Retrieval** (suche) | **Storage** (CRUD, Create, Read, Update, Delete)
+
 
 ---
 
