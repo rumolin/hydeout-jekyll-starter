@@ -11,9 +11,10 @@ tail -> analog zu head
 * -> wildcard für 0 oder mehrere Charakter
 mv -> bewegen, wenn Dateiname und directory, umbennenen wenn dateiname und neuer Name
 echo -> Anzeigen von Text
-variablen -> NAME= xyz; echo $NAME -> xyz wird ausgegeben
+variablen -> NAME= xyz; echo $NAME -> xyz wird ausgegeben -> $ wird für Umgebungsvariablen genutzt
 echo $(date) -> aktuelles Datum wird ausgegeben
 rm -> remove (löschen, bei directory rm -r)
 cp -> kopieren, alter name und neuer Name erstellt backup
 Befehl > dateiname.txt -> Ausgabe in dateiname.txt
 ws -l | sort -n -> Pipes (|) trennt Befehle voneinander ab
+

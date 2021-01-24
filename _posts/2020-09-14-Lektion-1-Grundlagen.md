@@ -6,8 +6,6 @@ comments: false
 sidebar_link: true
 categories: 
 tags: 
-- start
-- basics
 - shell
 - jekyll
 - markdown
@@ -28,19 +26,19 @@ Bei der Übernahme des bereitgestellten Templates habe ich bemerkt, dass es vers
 Für das Aufsetzen des Blogs habe ich das Repository von [@Forestryio](https://github.com/forestryio/hydeout-jekyll-starter) geforked und bearbeitet. Folgende Anpassungen habe ich vorgenomnen, damit die Website funktioniert:
 *	CNAME-file gelöscht 
 *	Base-URL im config-file durch meine URL ersetzt ('/lerntagebuch-bain')
-*	Den Branch gh-pages gelöscht (so lange ich diesen Branch und den master hatte, hat das Veröffentlichen komischerweise nicht geklappt….)
+*	Den Branch gh-pages gelöscht (so lange ich diesen Branch und den master hatte, hat das Veröffentlichen des Blogs komischerweise nicht geklappt, obwohl ich mir nicht erklären kann, womit dies zusammenhängt)
   
-  Folgendes habe ich angepasst:
+Folgendes habe ich angepasst:
   *	Title, tagline, description und persönliche Angaben
   *	Sidebar personalisiert
   *	Favicon geändert
   
 Folgende Änderungen am Blog sind noch geplant: 
   *	Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) (erledigt)
-  *	About, Thema 1, Thema 2 und Post Formats (Menüpunkte in der Sidebar) sollen im Laufe der Zeit zu Überthemen umbenannt werden, worüber passende Blogposts jeweils gefunden werden können. 
-  *	Evt. Neues CNAME-File erstellen
+  *	About, Thema 1, Thema 2 und Post Formats (Menüpunkte in der Sidebar) sollen im Laufe der Zeit zu Überthemen umbenannt werden, worüber passende Blogposts jeweils gefunden werden können  (erledigt)
+  *	Evt. Neues CNAME-File erstellen 
   
-Momentan stellt sich mir noch die Frage, wie ich am einfachsten Änderungen am Lernblog vornehmen kann, damit diese gleich sichtbar werden. Beim Arbeiten mit Gitlab letztes Jahr war der grosse Vorteil, dass ich viele Änderungen lokal bei mir auf dem Rechner ausprobieren konnte. Erst sobald etwas definitiv funktioniert hat, habe ich committed und gepusht. Mit Github-pages scheint es so, als ob jede kleine Änderung sofort committed werden muss, um sie sichtbar zu machen. Das hat viele Commits zur Folge. Das werde ich noch in Erfahrung bringen. 
+Momentan stellt sich mir noch die Frage, wie ich am einfachsten Änderungen am Lernblog vornehmen kann, damit diese gleich sichtbar werden. Beim Arbeiten mit Gitlab letztes Jahr war der grosse Vorteil, dass ich viele Änderungen lokal bei mir auf dem Rechner ausprobieren konnte. Erst sobald etwas definitiv funktioniert hat, habe ich committed und gepusht. Mit Github-pages scheint es so, als ob jede kleine Änderung sofort committed werden muss, um sie sichtbar zu machen. Das hat viele Commits zur Folge.
 
 ---
 
@@ -51,19 +49,19 @@ Ein Thema das mich sowohl im Zusammenhang mit dem Lernblog, aber auch generell b
 
 |Code|Ausgabe|
 |-----------------|-----------------|
-|```` #Überschriften Note: (je mehr # desto kleiner ````|# Überschrift1|
-|```` *kursiv* ````|*kursiv*|
-|```` **fett** ````|**fett**|
-|```` - liste 1 ````| - liste 1|
-|```` * liste 2  ````| * liste 2|
-|```` + liste 3  ````|+ liste 3|
-|```` 1. Liste  ````|1. Liste|
-|```` [link text](https://link.ch)  ````|[link text](https://link.ch)  |
-|```` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>````
+|` #Überschriften Note: (je mehr # desto kleiner `|# Überschrift1|
+|` *kursiv* `|*kursiv*|
+|` **fett** `|**fett**|
+|` - liste 1 `| - liste 1|
+|` * liste 2  `| * liste 2|
+|` + liste 3  `|+ liste 3|
+|` 1. Liste  `|1. Liste|
+|` [link text](https://link.ch) `|[link text](https://link.ch)  |
+|` <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>`
 |<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="30%"/>[^1]|
-|```` > Zitat  ````|> Zitat|
-|```` ---   ````|---|
-|```` Ich bin eine Fussnote.[^2]  ````| Ich bin eine Fussnote.[^2]  |
+|` > Zitat  `|> Zitat|
+|` ---   `|---|
+|` Ich bin eine Fussnote.[^2] `| Ich bin eine Fussnote.[^2]  |
 
 
 Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gibt es unter anderem den GitHub-Flavoured-Dialekt, der allenfalls etwas anders funktioniert. Bei zukünftigen Unklarheiten werde ich also die [GitHub-Seite](https://github.github.com/gfm/) besuchen.
@@ -74,12 +72,6 @@ Gemäss [CMSStash](https://cmsstash.de/website-praxis/markdown-fur-webseiten) gi
 
 Um die Shell-Kommandos nochmals zu repetieren habe ich die Übungen aus der Library Corpentry gemacht. Zusätzlich habe ich über die Shell ein File erstellt, um die nützlichen Befehle zu notieren. Dies ist hier abgelegt: [commands.txt](https://github.com/rumolin/lerntagebuch-bain/blob/master/commands.txt)
 
----
-
-#### Offene To Do’s bis nächstes Mal:
-
-- [x] Blog Vorschau auf Hauptseite einrichten
-- [x] offene Fragen klären
 
 ---
 [^1]: Komischerweise hat die Eingabe des Dateipfades alleine nicht gereicht und mit der empfohlenen Markup-Variante wurde mir kein Bild angezeigt.

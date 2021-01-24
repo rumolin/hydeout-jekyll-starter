@@ -16,7 +16,7 @@ tags:
 
 ---
 
-##### offene Fragen und To Do's
+#### offene Fragen und To Do's aus der letzten Stunde
 
 Der Import der Schnellaufnahme in Koha hat problemlos funktioniert. Offene Fragen oder ähnliches gibt es dieses Mal nicht. 
 
@@ -34,7 +34,7 @@ Als Wiederholung haben wir die Defnition von Namespaces nochmals geklärt: Ein X
 
 ---
 
-##### Koha Übungen
+#### Koha Übungen
 
 Die Übungen zu Koha haben allesamt gut geklappt. Da die Schnellaufnahme beim ersten Mal nicht funktionierte, habe ich es einfach mit der normalen Aufnahme durchgeführt und das war meiner Meinung nach kein grosser Unterschied. Mit dem Import einer ods-Datei war das dann aber kein Problem. Das System schien sehr einfach und intuitiv, sowohl für die Aufnahme von Büchern aber auch das Ausleihen und Rückbuchen. 
 
@@ -44,7 +44,7 @@ Um nun eine Abfrages des Gesamtkatalogs zu machen, haben wir OAI_PMH genutzt, da
 
 ---
 
-##### Installation ArchivesSpace 2.8.0
+#### Installation ArchivesSpace 2.8.0
 
 archivesspace starten: archivesspace/archivesspace.sh
 
@@ -56,13 +56,14 @@ Die Installation und das Anmelden hat problemlos geklappt. Hier als Erinnerung f
 * http://localhost:8089/ – the backend
 * http://localhost:8090/ – the Solr admin console
 
-Bisauf Solr admin console kann ich mir unter allem ungefähr etwas vorstellen.
+Bis auf Solr admin console kann ich mir unter allem ungefähr etwas vorstellen.
 
-über schnittstellen: wir greifen auf Daten zu, auf die wir sonst keinen Zugriff hätten. die nicht in unserem eigenen System liegen. 
+Über Schnittstellen: wir greifen auf Daten zu, auf die wir sonst keinen Zugriff hätten, weil sie nicht innerhalb unseres eigenen Systems liegen. 
+
 XSL = Scriptsprache, um XML zu manipulieren XST-> Transformation
-MARCXML ist MARC21, MARC gibt es auch noch, ist Vorläufer von MARC21
 
-Crosswalk: gängiger Begriff im IT-Bereich, Information Science, um Konvertierung von Metadatenstandards in anderen zu beschreiben. beinhaltet Regeln, wie Elemente und ggf. Werte zugeordnet oder verändert werden müssen. Nicht einfach, weil Standards erzwingen, dass Entscheidungen getroffen werden müssen, in welches Feld. Nicht immer einfach. So gehen manchmal Inhalte oder Zusammehhänge verloren. Prozess von Zuordnung von Elementen nennt man Mapping. 
+MARCXML ist identische XML-Version MARC21, MARC gibt es auch noch, ist Vorläufer von MARC21. Mehr dazu [in diesem Blogpost](https://rumolin.github.io/lerntagebuch-bain/2021/01/22/Lektion-10-Linked-Data.html)
 
-Ursprünglich für Windows entwickelt, damit man unter Linux laufen lassen kann, muss man Laufzeitumgebung installieren (mono) damit das läuft. Schriftenpaket um utf-8 zeichen darstellen zu können ist Schriftart Noto. 
+Crosswalk: gängiger Begriff im IT-Bereich, um Konvertierung von Metadatenstandards in anderen zu beschreiben. Crosswalks beinhalten Regeln, wie Elemente und gegebenenfalls Werte zugeordnet oder verändert werden müssen. Dies ist nicht so einfach, weil Standards erzwingen, dass Entscheidungen getroffen werden müssen, in welches Feld was vermerkt wird. So gehen manchmal Inhalte oder Zusammehhänge verloren. Der Prozess von der Zuordnung der Elemente nennt man Mapping. 
 
+ArchivesSpace wurde ursprünglich für Windows entwickelt, damit man das unter Linux laufen lassen kann, muss man Laufzeitumgebung installieren (mono).

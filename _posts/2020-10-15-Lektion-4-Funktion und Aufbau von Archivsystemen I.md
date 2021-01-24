@@ -18,15 +18,15 @@ tags:
 
 ---
 
-##### offene Fragen und To Do's
+#### offene Fragen und To Do's
 
 Während der Stunde habe ich bei der Übung mit Archivesspaces eine Fehlermeldung unter dem public Interface erhalten. Gaby hat sich zum Glück meiner Überforderung angenommen und mir erklärt, wie ich mit dem folgenden Befehl meine log-files auslesen kann:
 
-````grep -B 100 -A 100 "WARNING: ERROR" archivesspace.out````
+    grep -B 100 -A 100 "WARNING: ERROR" archivesspace.out
 
 <!--more-->
 
-Dieser musste im Verzeichnis archivesspache/logs ausgeführt werden, wo sich die Logfiles befinden. grep ist ein Programm, das zur Suche und Filterung von bestimmten Zeichenketten dient (in diesem Fall "WARNING: ERROR") in der Datei archivesspace.out. -B und -A 100 wirft die 100 Zeilen vor und nach dem gesuchten String aus. Der Text aus dem Logfile habe ich an die Dozierenden ermittelt und die haben dann zum Glück das Problem eruieren können: Komischerweise hatten Gaby und ich beide Java 11 statt 8 aktiviert. Dies hat mit archivesspace offenbar zu Problemen geführt. Mit sudo update-alternatives --config java konnte das von Herr Lohmeier zum Glück behoben werden und das public interface funktioniert nun einwandfrei. 
+Dieser musste im Verzeichnis archivesspache/logs ausgeführt werden, wo sich die Logfiles befinden. grep ist ein Programm, das zur Suche und Filterung von bestimmten Zeichenketten dient (in diesem Fall "WARNING: ERROR") in der Datei archivesspace.out. -B und -A 100 wirft die 100 Zeilen vor und nach dem gesuchten String aus. Der Text aus dem Logfile habe ich an die Dozierenden übermittelt und die haben dann zum Glück das Problem eruieren können: Komischerweise hatten Gaby und ich beide Java 11 statt 8 aktiviert. Dies hat mit archivesspace offenbar zu Problemen geführt. Mit sudo update-alternatives --config java konnte das von Herr Lohmeier zum Glück behoben werden und das public interface funktioniert nun einwandfrei. 
 Nun gilt es, Accession und Ressources noch zu vervollständigen.
 
 Ebenfalls wurde noch geklärt, weshalb wir OAI-PMH nutzen. Über diese Schnittstelle können Daten zur Weiterverarbeitung abgerufen werden und es nützt der Aggregation für Verbundsrecherchen (wohl wie bei Nebis)...
@@ -67,7 +67,7 @@ Folgende Probleme zeigen sich mit ISAD(G):
 * Die Tektonik ist eindimensional (Mehrfachzuordnungen sind nicht möglich)
 * Der Standard enthält keine Vorgaben zur Digitalisierung oder zur digitalen Langzeitarchivierung (Gemäss Dozierenden ist dies ja aber eigentlich ein Glücksfall, da Archive und Bibliotheken so gezwungenermassen näher zusammenrücken müssen, was die Digitalisierung betrifft...)
 
-In diesem Zusammenhang kommt dann RIC, *RecordsInContext* ins Spiel. An diesem Standard wir gearbeitet, weil ISAD(G) genau die oben beschreibenen Defizite aufweist. 
+In diesem Zusammenhang kommt dann RIC, *Records in Context* ins Spiel. An diesem Standard wir gearbeitet, weil ISAD(G) genau die oben beschreibenen Defizite aufweist.
 
 ---
 
@@ -77,13 +77,13 @@ Um Normdateien verzeichnen zu können, kam dann später ISAAR(CPF) als ergänzen
 
 ---
 
-##### EAD
+#### EAD
 
-Das *Encoded Archival Description* ist ein XML-Standard. Da wir später praktisch damit arbeiten werden, wird dies hier (wie in den Folien) nicht weiter ausgeführt. 
+Das *Encoded Archival Description* (EAD) ist ein XML-Standard. Da wir später praktisch damit arbeiten werden, wird dies hier (wie in den Folien) nicht weiter ausgeführt. 
 
 ---
 
-##### aktuelle Entwicklungen
+#### aktuelle Entwicklungen
 
 Umstieg von ISAD(G) auf RiC (Systemwechsel usw.) wird grosse Migrationsprojekte nach sich ziehen, da sich grunsätzliche Verzeichnungsart ändern wird. Immer mehr Volltexte werden generiert durch die Möglichkeiten von der Handschrifterkennung und die automatisierte Anrecherung von Volltexten durch Named Entity Recognition.  
 
