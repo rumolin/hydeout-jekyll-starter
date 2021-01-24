@@ -52,7 +52,7 @@ Vorgehen:
 2. mit dem Tool die Daten abrufen und als XML auf der Festplatte speichern 
 
 
-OAI-PMH Endpoints: Da es bei mir langsam etwas unübersichtlich wurde, welche Angaben man wo wofür und warum braucht, habe ich ein Cheat-Sheet erstellt: (https://github.com/rumolin/lerntagebuch-bain/blob/master/Cheat%20Sheet%20BAIN.docx) Dort sind auch alle OAI-PMH Endpoints und eine Kurzanleitung zur jeweiligen Bedienung aufgeführt. Da ich aber darauf spekuliere, dass wir auch nach Beendigung des Kurses Zugriff auf die jeweiligen Anleitungen haben, sind die Befehle jeweils nicht so detailliert aufgeführt. 
+OAI-PMH Endpoints: Da es bei mir langsam etwas unübersichtlich wurde, welche Angaben man wo wofür und warum braucht, habe ich ein Cheat-Sheet erstellt: (https://github.com/rumolin/lerntagebuch-bain/blob/master/Cheat-Sheet-BAIN.pdf) Dort sind auch alle OAI-PMH Endpoints und eine Kurzanleitung zur jeweiligen Bedienung aufgeführt. Da ich aber darauf spekuliere, dass wir auch nach Beendigung des Kurses Zugriff auf die jeweiligen Anleitungen haben, sind die Befehle jeweils nicht so detailliert aufgeführt. 
 
 Unterschied Export / Abfrage OAI-Schnittstelle: OAI liefert Daten anders aus, als wenn man Daten beispielsweise aus DSpace exportiert. OAI-Schnittstelle hat noch Infos drumherum. Deshalb andere Darstellung der Daten. Muss beim Experimentieren bedenkt werden!
 
