@@ -15,7 +15,7 @@ tags:
 
 <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/binaer.jpg?raw=true" width="70%"/>
 
-Quelle: (https://blogs.fu-berlin.de/abenteuerstudium/2019/07/12/wie-waers-mit-informatik/)
+<small>Quelle: [https://blogs.fu-berlin.de/abenteuerstudium/2019/07/12/wie-waers-mit-informatik/](https://blogs.fu-berlin.de/abenteuerstudium/2019/07/12/wie-waers-mit-informatik/)</small>
 
 ---
 

@@ -4,7 +4,10 @@ title: Lektion 7 Metadaten modellieren und Schnittstellen nutzen II
 excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
-categories: 
+categories:
+- Metadaten
+- Übungen
+- Tools
 tags: 
 - OpenRefine
 - GREL
@@ -79,6 +82,7 @@ value.contains("test") | liefert Boolean Ausdruck zurück
 if(value.contains("test"), "Test data", value) | ersetzt einen Zellenwert mit den Worten "Test Data" wenn der Wert in der Zelle den tring "test" irgendwo beinhaltet. 
 
 In OpenRefine gibt es auch Arrays. Diese sind Listen von Werten, die wie gewohnt in [] präsentiert werden. Die Werte werden jeweils von "" abgeschlossen (bei Strings) und durch Kommas getrennt. Mit GREL-Expressions können Arrays transformiert werden:
+
 value.split(",") | trennt bei Komma
 value.split(",").sort() | würde das splitten und alphabetisch sortieren A-Z
 value.split(",")[0] | gibt ersten Listeneintrag aus

@@ -5,6 +5,7 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Metadaten
 tags: 
 - BIBFRAME
 - MARC
@@ -15,7 +16,9 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 9.PNG?raw=true" width="70%"/>
+<img alt="Shell" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 14.PNG?raw=true" width="70%"/>
+
+<small>Quelle: [https://www.loc.gov/bibframe/docs/bibframe2-model.html](https://www.loc.gov/bibframe/docs/bibframe2-model.html)</small>
 
 --- 
 
@@ -41,6 +44,8 @@ Als Buchhändlerin, die zwar in einer Bibliothek arbeitet, jedoch nichts mit Kat
 BIBFRAME basiert auf Functional Requirements for Bibliographic Records (FRBR) als Konzept sowie Resource Description and Access (RDA) als Regelwerk, setzt aber beides nicht vollständig um, was auch häufig kritisiert wird. BIBFRAME besteht aus *Model* und *Vocabulary*, das Datenmodell unterscheidet zwischen Work, Instance und Item (im Gegensatz zu FRBR also etwas vereinfacht) und hat die Entitäten Agent, Subject und Event. 
 
 Das Vokabular definiert Konzepte und deren Eigenschaften zur Beschreibung der Entitäten des Datenmodells. BIBFRAME folgt dem Linked Data-Paradigma, alles hat also eindeutige URIs und Identifier. 
+
+Hier eine Übersicht (wird auch im Beitragsbild dargestellt):
 
 Work | Idee von Werk an sich (analog zu Werk von FRBR) 
 Instance | Expression und Manifestation (das finde ich sowieso schwierig, diesen Unterschied in FRBR zu fassen, das zusammenzunehmen erscheint mir sinnvoll) 

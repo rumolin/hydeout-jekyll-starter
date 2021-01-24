@@ -5,6 +5,9 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Metadaten
+- Tools
+- Übungen
 tags: 
 - XML
 - JSON
@@ -89,9 +92,8 @@ Bisher fungierte Lido eher als Austauschformat, ansonsten arbeiten Museen immer 
 
 VuFind gibt es schon recht lange, die Entwicklung wird aber vor allem von einigen wenigen Personen vorangetrieben. Bei [OpenHub](https://www.openhub.net/p/vufind) kann man sich generell einen Überblick verschaffen. Vufind ist eine php-Software, die eine Datenbank (MariaDB) und für die Suche solR verwendet. Letztere müssen wir manuell starten, während Datenbank im Hintergrund bereits läuft. 
 
->[WARNING]
->Linux-Konvention: Wenn man Datei starten möchte innerhalb des Verzeichnisses, in de man sich befindet, muss Datei mit ./ vorgängig aufgerufen werden. 
-
+{% include note.html content="Achtung, Linux-Konvention: Wenn man eine Datei starte möchte innerhalb des Verzeichnisses, in dem man sich befindet, muss die Daten mit ./ vorgängig aufgerufen werden."
+%}
 
 Die Installation von Vufind hat mir einiges abverlangt! Dank der guten Anleitungen und minimaler Shell-Erfahrung, die ich mir in vorherigen Modulen angeeignet habe, haben alle Installationen bisher wunderbar geklappt und ich konnte 99% davon auch nachvollziehen. Trotzdem ging dieses Mal einiges schief. Beim Installationstermin musste ich früher weg und habe die Installation deshalb dann nicht beendet, wohl aber angefangen. Als ich das dann später nachholen wollte, scheiterte ich an mehreren Problemen:
 
@@ -106,13 +108,16 @@ Danach konnte solr normal gestartet werden
 - Nächstes Problem: Error 404 beim Aufrufen von http://localhost/vufind/Install/Home. Alles klar, also nochmals von vorne alles neu installiert. Zwischenzeitlich war ich unsicher, ob tatsächlich Java 8 installiert war, deshalb habe ich das überprüft mit ```` Java -version ````. So ganz schlau geworden daraus bin ich nicht, aber in der Versionsnummer war eine 8 enthalten, deshalb dachte ich, dass das schon passen wird. Auch nach der Neuinstallation trat das Problem auf, dass solr nicht gestartet werden konnte, aber das war ja inzwischen kein Hindernis mehr. Und siehe da, die Seite liess sich mit der Neuinstallation tatsächlich aufrufen. Problem gelöst. 
 - Die nächste (und mühsamste) Stolperfalle war dann der Import der Dateien im MARC21-Format. Dies liess sich nicht bewerkstelligen, ganz egal, wie ich das versucht habe. Am Ende dämmerte es mir dann doch: Da war doch was mit einem Befehl, der in der ersten Version der Anleitung nicht richtig ausgeführt worden war... Doch wie reparieren? Ich habe dann mal bei meinen Kolleginnen und Kollegen in den Lerntagebüchern gespickt, um zu schauen, wie die das gelöst haben und natürlich wurde ich bei [Gaby Leuenberger](https://regrebneuel.github.io/bain-log/2020-11-27/OpenRefine-reloaded) fündig:
 
-```` sudo apt-get update ````
+```bash
+    sudo apt-get update 
+    sudo apt-get upgrade
+```
 
-    sudo apt-get upgrade 
-    
 Dann Java 8 installieren:
 
+```bash
     sudo apt install -y openjdk-8-jdk
+```
 
 Alle Schritte gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both) bis und mit dem Starten von Solr nochmals durchgeführt und wow, schon läufts wie geschmiert. Alle Konfigurationsschritte auf [http://localhost/vufind/Install/Home](http://localhost/vufind/Install/Home) konnte ich mir sparen, da ich das schon durchgeführt hatte. Nun klappte auch der Import der Beispieldaten problemlos: 
 

@@ -10,11 +10,15 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 9.PNG?raw=true" width="70%"/>
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 15.jpg?raw=true" width="70%"/>
+
+<small>Quelle: [https://pixabay.com/illustrations/web-network-programming-3706563/](https://pixabay.com/illustrations/web-network-programming-3706563/)</small>
 
 --- 
 
 Nun neigt sich das Semester also langsam dem Ende und damit naht auch die Deadline für die Abgabe des Lerntagebuchs. Leider habe ich das Modul Bibliotheks- und Archivinformatik nicht so zuverlässig verfolgt, wie ich mir vorgenommen hatte. Dieses Semester war ich beruflich in einem grossen Projekt involviert und hatte zusätzlich noch etwas mehr ECTS zu leisten als bisher. Das Modul, das sich dank der Aufzeichnungen am leichtesten aufschieben liess, war dann leider BAIN. 
+
+<!--more-->
 
 Bis und mit Lektion 6 habe ich mehr oder weniger zeitnah aufgearbeitet und die Beiträge dazu verfasst, ab Lektion 7 habe ich aber komplett den Anschluss verpasst,da ich auch mit den Hausaufgaben nicht mehr nachkam.
 
@@ -38,7 +42,7 @@ Alles in allem bedanke ich mir für den spannenden und sehr gut gemachten Kurs. 
 
 
 
-Hier für mich noch der Link zum Github-Repository, damit ich bei Bedarf wieder auf das BAIN-Skript zugreifen kann: https://github.com/felixlohmeier/bibliotheks-und-archivinformatik 
+Hier für mich noch der Link zum Github-Repository, damit ich bei Bedarf wieder auf das BAIN-Skript zugreifen kann: [https://github.com/felixlohmeier/bibliotheks-und-archivinformatik](https://github.com/felixlohmeier/bibliotheks-und-archivinformatik)
 
  
 

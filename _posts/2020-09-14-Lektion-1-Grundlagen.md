@@ -34,9 +34,9 @@ Folgendes habe ich angepasst:
   *	Favicon geändert
   
 Folgende Änderungen am Blog sind noch geplant: 
-  *	Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) (erledigt)
-  *	About, Thema 1, Thema 2 und Post Formats (Menüpunkte in der Sidebar) sollen im Laufe der Zeit zu Überthemen umbenannt werden, worüber passende Blogposts jeweils gefunden werden können  (erledigt)
-  *	Evt. Neues CNAME-File erstellen 
+  - [x] Auf der Hauptseite soll nicht mehr der ganze Blogartikel sichtbar sein, sondern nur noch eine Vorschau (inklusive Beitragsbild) (erledigt)
+  - [x] About, Thema 1, Thema 2 und Post Formats (Menüpunkte in der Sidebar) sollen im Laufe der Zeit zu Überthemen umbenannt werden, worüber passende Blogposts jeweils gefunden werden können  (erledigt)
+  - [ ] Evt. Neues CNAME-File erstellen 
   
 Momentan stellt sich mir noch die Frage, wie ich am einfachsten Änderungen am Lernblog vornehmen kann, damit diese gleich sichtbar werden. Beim Arbeiten mit Gitlab letztes Jahr war der grosse Vorteil, dass ich viele Änderungen lokal bei mir auf dem Rechner ausprobieren konnte. Erst sobald etwas definitiv funktioniert hat, habe ich committed und gepusht. Mit Github-pages scheint es so, als ob jede kleine Änderung sofort committed werden muss, um sie sichtbar zu machen. Das hat viele Commits zur Folge.
 

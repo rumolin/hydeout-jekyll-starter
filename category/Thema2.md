@@ -1,6 +1,4 @@
 ---
 layout: category
-title: Thema 2
+title: Übungen
 ---
-
-Another sample category page.

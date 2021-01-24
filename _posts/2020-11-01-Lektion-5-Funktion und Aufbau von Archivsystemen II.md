@@ -5,6 +5,7 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Übungen
 tags: 
 - archivesspace
 - dspace
@@ -46,10 +47,10 @@ Es erscheint darauf ein Auswahlmenü zum abändern der Java-Version.
 #### Begrifflichkeiten und Repetition von ArchivesSpace
 
 - **Accession:** Dokumentation der Erwerbung, ist oft nicht öffentlich, haben wir aber öffentlich gemacht. Wäre im echten Archiv wohl eher unüblich. Oft hat man vertrauliche Angaben, die wir nicht öffentlich machen wollen. Der Erwerbungsprozess soll zwar dokumentiert werden, allerdings wird der Status erst öffentlich gemacht, wenn das Archiv diese Information auch wirklich offen legen will. Das wäre in der Praxis wohl eher am Ende eines Archivierungsprozesses als am Anfang oder mittendrin. 
-* Gemäss Materialien von NYU dokumentiert die Accession eine Gruppe von Archivmaterial. Eine Collection kann aus einer oder mehreren Accession bestehen und diese sollen die Fragen beantworten, wie das Material zu uns kam, was wir damit gemacht haben und wie wir das Material generell verwalten.   
-- Resource: in Archivesspace legt man eine Ressource an, die ist zentraler Nachweis auf oberster Ebene von ISAD(G), das kann Nachlass selbst sein oder als Einzelobjekt (beispielsweise Brief oder so ohne Kontext zu anderen Sammlungen). Der Normalfall ist aber, dass wir Nachlass/Sammlung haben usw. und dann das als Resource anlegen. 
-* Gemäss NYU: Intellektuelle Einheit. Das [SAA-Glossar](http://files.archivists.org/pubs/free/SAA-Glossary-2005.pdf) bezeichnet Resource als *verfügbare Bestände*. 
-- Archival Object: An dieser Resource kann man dann das sogenannte *Archival Object* dranhängen. Das ist der Nachweis von Objekten auf weitere Verzeichnisstufen. Sie werden mittels *add child* an vorhandene Ressourcen angehängt.
+    * Gemäss Materialien von NYU dokumentiert die Accession eine Gruppe von Archivmaterial. Eine Collection kann aus einer oder mehreren Accession bestehen und diese sollen die Fragen beantworten, wie das Material zu uns kam, was wir damit gemacht haben und wie wir das Material generell verwalten.   
+- **Resource:** in Archivesspace legt man eine Ressource an, die ist zentraler Nachweis auf oberster Ebene von ISAD(G), das kann Nachlass selbst sein oder als Einzelobjekt (beispielsweise Brief oder so ohne Kontext zu anderen Sammlungen). Der Normalfall ist aber, dass wir Nachlass/Sammlung haben usw. und dann das als Resource anlegen. 
+    * Gemäss NYU: Intellektuelle Einheit. Das [SAA-Glossar](http://files.archivists.org/pubs/free/SAA-Glossary-2005.pdf) bezeichnet Resource als *verfügbare Bestände*. 
+- **Archival Object:** An dieser Resource kann man dann das sogenannte *Archival Object* dranhängen. Das ist der Nachweis von Objekten auf weitere Verzeichnisstufen. Sie werden mittels *add child* an vorhandene Ressourcen angehängt.
 
 Bei einem Archivierungsprozess wird also zuerst eine Accession erstellt, danach eine Resource angehängt und darunter die Archival Objects. Mit diesem Verständnis ist ArchivesSpace auf einen Schlag sehr viel verständlicher und logischer. Bei der Resource kann dann jeweils auch die Verzeichnisstufe nach ISAD(G) angegeben werden. 
 

@@ -5,6 +5,8 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Metadaten
+- Tools
 tags: 
 - archivesspace
 - ISAD(G)
@@ -41,7 +43,7 @@ ISAD(G) hat 26 Verzeichnungselemente in 7 Informationsbereichen (Identifikation,
 
 Als Stufen kennt ISAD(G) das Archiv, den Bestand, die Serie, das Dossier und das Dokument. Je nach Grösse des Archivs kann nach dem Archiv noch in Abteilungen unterteilt werden. 
 
-**Pflichtelemente und empfohlene Elemente auf den verschiedenen Verzeichnistufen:**[^1]
+**Pflichtelemente und empfohlene Elemente auf den verschiedenen Verzeichnistufen:[^1]**
 
 |Verzeichnungselemente|Archiv|Bestand|Serie|Dossier|Dokument|
 |---|---|---|---|---|---|
@@ -101,7 +103,7 @@ Bei der Übung haben wir frei nach Gefühl einige Archivobjekte aufgenommen, ohn
 
 ---
 
-[^1] p steht für Pflichtelement, E steht für empfohlenes Element
+[^1]: p steht für Pflichtelement, E steht für empfohlenes Element
 
 
 

@@ -1,7 +1,6 @@
 ---
 layout: category
-title: Post Formats
-category: Post Formats
+title: Metadaten
+category: Metadaten
 
 ---
-Another sample category page.

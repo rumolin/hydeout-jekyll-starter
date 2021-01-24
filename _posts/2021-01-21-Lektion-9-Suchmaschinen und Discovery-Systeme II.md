@@ -5,6 +5,8 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Übungen
+- Tools
 tags: 
 - Discoverysysteme
 - Vufind
@@ -12,12 +14,12 @@ tags:
 
 ---
 
-<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 9.PNG?raw=true" width="70%"/>
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 11.PNG?raw=true" width="70%"/>
 
 --- 
 
-> *Isn’t it true that only librarians like to search? Everyone
-else likes to find. *([Tennant, 2001](
+> Isn’t it true that only librarians like to search? Everyone
+else likes to find. ([Tennant, 2001](
 http://lj.libraryjournal.com/2001/10/digital-resources/cross-databasesearch-one-stop-shopping/))
 
 ---
@@ -55,12 +57,19 @@ Wir führen zweimal die gleiche Suchanfrage aus, einmal in der Adminoberfläche 
 
 Die Suchanfrage über Solr direkt gibt JSON aus. Die Darstellung über Vufind ist natürlich sehr viel schöner und allgemeinverträglicher. 
 
-Das Logfile für die Suche über VuFind ist sehr viel länger. Zudem gibt es dort eine Autovervollständigung, wodurch immer wieder für jeden Buchstaben ein neues Logfile generiert wird. Mit allfields:1983 in Solr wurden drei Treffer erzielt (hits=3)und die ^zahlen verdeutlichen die Gewichtung. Ein Gewichtung bei der solr-Suche direkt ist im Logfile nicht erkennbar. Da stellt sich mir die Frage, wird bei Suchen in der Adminoberfläche also gar keine Gewichtung vorgenommen?
+Das Logfile für die Suche über VuFind ist sehr viel länger. Zudem gibt es dort eine Autovervollständigung, wodurch immer wieder für jeden Buchstaben ein neues Logfile generiert wird. Die ^zahlen verdeutlichen die Gewichtung
 
-Es gab Versuche, Personalisierungen bei der Gewichtung durchzuführen, so dass beispielsweise Kunststudent*innen ein anderes Ranking erhalten als Maschinenbauer*innen. Das hat aber nicht wirklich so funktioniert, wie das beispielsweise bei Google klappt. Ein Problem ist auch, dass Suchvorgänge so nicht mehr wirklich reproduzierbar sind. 
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 12.PNG?raw=true" width="100%"/>
 
 
-Nach dieser Übung haben wir sämtlichen importierte Daten gelöscht (was nach dem mühsamen Troubleshooting vom letzten Mal kurzzeitig Schnappatmungen bei mir ausgelöst hat, siehe dazu den [Blogbericht vom letzten Mal](https://rumolin.github.io/lerntagebuch-bain/2020/11/21/Lektion-8-Suchmaschinen-und-Discovery-Systeme-I.html).
+Mit allfields:1983 in Solr wurden drei Treffer erzielt (hits=3). Ein Gewichtung bei der solr-Suche direkt ist im Logfile nicht erkennbar. Da stellt sich mir die Frage, wird bei Suchen in der Adminoberfläche also gar keine Gewichtung vorgenommen?
+
+<img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 13.PNG?raw=true" width="100%"/>
+
+Es gab wohl Versuche, Personalisierungen bei der Gewichtung durchzuführen, so dass beispielsweise Kunststudent\*innen ein anderes Ranking erhalten als Maschinenbauer\*innen. Das hat aber nicht wirklich so funktioniert, wie das beispielsweise bei Google klappt. Ein Problem ist auch, dass Suchvorgänge so nicht mehr wirklich reproduzierbar sind. 
+
+
+Nach dieser Übung haben wir sämtlichen importierte Daten gelöscht (was nach dem mühsamen Troubleshooting vom letzten Mal kurzzeitig Schnappatmungen bei mir ausgelöst hat, siehe dazu den [Blogbericht vom letzten Mal](https://rumolin.github.io/lerntagebuch-bain/2020/11/21/Lektion-8-Suchmaschinen-und-Discovery-Systeme-I.html)).
 
 ---
 

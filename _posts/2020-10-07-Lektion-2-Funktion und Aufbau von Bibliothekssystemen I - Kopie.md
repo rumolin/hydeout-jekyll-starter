@@ -5,6 +5,9 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Tools
+- Übungen
+- Metadaten
 tags: 
 - koha
 - github pages

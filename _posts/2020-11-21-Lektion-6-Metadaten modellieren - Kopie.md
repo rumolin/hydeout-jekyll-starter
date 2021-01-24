@@ -5,6 +5,8 @@ excerpt_separator: "<!--more-->"
 comments: false
 sidebar_link: true
 categories: 
+- Übungen
+- Metadaten
 tags: 
 - oai-pmh
 - sru
