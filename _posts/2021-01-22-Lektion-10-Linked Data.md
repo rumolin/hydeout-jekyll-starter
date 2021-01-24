@@ -29,7 +29,7 @@ Als Buchhändlerin, die zwar in einer Bibliothek arbeitet, jedoch nichts mit Kat
 
 ##### Zusammenhang MARC, RDA und FRBR: 
 
-**MARC** (machine_Readable-Cataloging) ist ein Datenformat, das dazu dient, bibliografische Daten zu erfassen, zu speichern und auszutauschen. MARC21 ist die weltweit am häufigsten verwendete Version ([DNB, 2020](dng.de/DE/Professionell/Standardisierung/standards_node.html)). MarcXML ist eine inhaltlich identlische XML-Version dieses Datenformats (ebd.).
+**MARC** (machine-Readable-Cataloging) ist ein Datenformat, das dazu dient, bibliografische Daten zu erfassen, zu speichern und auszutauschen. MARC21 ist die weltweit am häufigsten verwendete Version ([DNB, 2020](dng.de/DE/Professionell/Standardisierung/standards_node.html)). MarcXML ist eine inhaltlich identlische XML-Version dieses Datenformats (ebd.).
 
 **RDA** (Resource Descritption and Access) ist ein internationaler Katalogisierungsstandard und bibliothekarisches Regelwerk zur Katalogisierung. Der Text des Regelwerks wird als "RDA Toolkit" publiziert ([Wikipedia, 2020](https://de.wikipedia.org/wiki/Resource_Description_and_Access)). RDA basiert auf FRBR.
 

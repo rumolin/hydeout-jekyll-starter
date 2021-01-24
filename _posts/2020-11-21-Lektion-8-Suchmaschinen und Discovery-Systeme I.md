@@ -19,7 +19,7 @@ tags:
 
 ##### Nachtrag von OpenRefine
 
-Validierung XML: MARCXML-Schema definiert Regeln. Wenn man saubere XML-Daten produzieren möchte, muss das abgeglichen werden. XSD-Format um Schema zu definieren für XML-Daten. Was soll wann vorkommen und wie soll es aussehen? Schema kann Form vorgeben und validieren, aber auch Inhalte im Feld vorgeben. Prüfung der Form soll mindestens sichergestellt werden, wenn man XML-Dateien geschrieben hat. Validierung als wichtige Grundlage. 
+Validierung XML: MARCXML-Schema definiert Regeln für XML-Dateien. Wenn man saubere XML-Daten produzieren möchte, muss das unbedingt abgeglichen werden. Es wird ein XSD-Format genutz, um ein Schema zu definieren für XML-Daten. Was soll wann vorkommen und wie soll es aussehen? Das Schema kann die Form vorgeben und validieren, aber auch Inhalte im Feld vorgeben. Die Prüfung der Form soll mindestens sichergestellt werden, wenn man XML-Dateien geschrieben hat. Validierung ist eine wichtige Grundlage. 
 
 Template exportieren, abspeichern und dann im Skript verschiedene Möglichkeiten der Validierung. 
 
@@ -36,11 +36,15 @@ Bei der XML-Deklaration handelt es sich um eine zusätzliche Textzeile am Anfang
 
     <?xml version="1.0" encoding="utf-8" standalone="yes"?>. 
 
-Durch diese Zeile erhält die Software den Hinweis, dass es sich um XML handelt. Die Software muss also nicht erst die ganze Datei einlesen und alles prüfen, das ist vor allem bei grossen Datei hilfreich. 
+Durch diese Zeile erhält die Software den Hinweis, dass es sich um XML handelt. Die Software muss also nicht erst die ganze Datei einlesen und alles prüfen, das ist vor allem bei grossen Dateien hilfreich. 
 
-Mit der Codezeile zu Beginn sagen wir: Es ist XML und wir sagen, welche Version (es gibt 1.0 und 1.1), encoding meint, in welcher Zeichencodierung wir das gespeichert haben. Sonderzeichen Umlaute u.ä. werden im Zeichensatz direkt abgebildet. Standalone klärt ob die Dokumenttypdefinition in der Datei selbst beiliegt. Standalone *yes* bedeutet, dass die Dokumenttypdefinition (DTD) integriert ist, *no* heisst es gibt eine, allerdings muss die noch extern abgefragt werden. Wenn das Attribut standalone weggelassen wird, gilt die Standarddokumenttypdefinition von XML. Wenn wir Standalone angeben, muss die Versionangabe beiliegen, zusätzlich dazu *encoding* anzugeben, ist nicht verpflichtend aber gute Praxis. Standalone kommt in Praxis nicht häufig vor. Die Reihenfolge der Attribute ist festgelegt und kann nicht geändert werden. Merci vielmals für diese Erklärung, denn das sieht man ja häufiger und bis anhin habe ich mir über die Bedeutung eigentlich noch keine Gedanken gemacht, obwohl das ja schon wichtig ist. 
+Mit der Codezeile zu Beginn sagen wir: Es ist XML und wir sagen, welche Version (es gibt 1.0 und 1.1), encoding meint, in welcher Zeichencodierung wir das gespeichert haben. Sonderzeichen Umlaute u.ä. werden im Zeichensatz direkt abgebildet. 
 
-Was mich noch beschäftigt ist folgendes: Dokumenttypdefinition wäre ja eine DTD. Ich gehe aber davon aus, dass das Attribut standalone auch für das XML-Schema XSD gilt, ich habe einige Quellen gefunden, wo das standalone-Attribut in Verbindung mit XSD genutzt wurde. Im Gegensatz zur DTD ist XSD etwas "genauer", respektive die geforderten Inhalte von Tags und Attributen können genauer angegeben werden und es ist selbst XML-basiert und verwendte keine separate Syntax wie DTDs. XSD-Dokumente bestehen selbst immer aus wohlgeformten XML-Dokumenten ([Kersken, 2020](http://openbook.rheinwerk-verlag.de/kit/itkomp15001.htm)). 
+Standalone klärt, ob die Dokumenttypdefinition in der Datei selbst beiliegt. Standalone *yes* bedeutet, dass die Dokumenttypdefinition (DTD) integriert ist, *no* heisst, es gibt eine, allerdings muss die noch extern abgefragt werden. Wenn das Attribut standalone weggelassen wird, gilt die Standarddokumenttypdefinition von XML. Wenn wir Standalone angeben, muss die Versionangabe beiliegen, zusätzlich dazu *encoding* anzugeben, ist nicht verpflichtend aber gute Praxis. 
+
+Standalone kommt in Praxis nicht häufig vor. Die Reihenfolge der Attribute ist festgelegt und kann nicht geändert werden. Merci vielmals für diese Erklärung, denn das sieht man ja häufiger und bis anhin habe ich mir über die Bedeutung eigentlich noch keine Gedanken gemacht, obwohl das ja schon wichtig ist. 
+
+Was mich noch beschäftigt ist folgendes: Dokumenttypdefinition wäre ja eine DTD. Ich gehe aber davon aus, dass das Attribut standalone auch für das XML-Schema XSD gilt, ich habe einige Quellen gefunden, wo das standalone-Attribut in Verbindung mit XSD genutzt wurde. Im Gegensatz zur DTD ist XSD etwas "genauer", respektive die geforderten Inhalte von Tags und Attributen können genauer angegeben werden und es ist selbst XML-basiert und verwendet keine separate Syntax wie DTDs. XSD-Dokumente bestehen selbst immer aus wohlgeformten XML-Dokumenten ([Kersken, 2020](http://openbook.rheinwerk-verlag.de/kit/itkomp15001.htm)). 
 
 ---
 
@@ -50,7 +54,7 @@ Es gibt natürlich alternative Software zu OpenRefine, generell gilt, dass die S
 
 #### JSON-APIs
 
-Im normalen Internet haben wir meistens mit Programmierschnittstellen zu tun, die JSON ausliefern. Es gibt auch immer mehr bibliothekarische Schnittstellen, die mit JSON arbeiten, denn JSON lässt sich gut parsen und aus- und verwerten. 
+In der *normalen* Internetumgebung haben wir meistens mit Programmierschnittstellen zu tun, die JSON ausliefern. Es gibt aber auch immer mehr bibliothekarische Schnittstellen, die mit JSON arbeiten, denn JSON lässt sich gut parsen und aus- und verwerten. 
 
 #### LIDO
 
@@ -85,10 +89,9 @@ Bisher fungierte Lido eher als Austauschformat, ansonsten arbeiten Museen immer 
 
 VuFind gibt es schon recht lange, die Entwicklung wird aber vor allem von einigen wenigen Personen vorangetrieben. Bei [OpenHub](https://www.openhub.net/p/vufind) kann man sich generell einen Überblick verschaffen. Vufind ist eine php-Software, die eine Datenbank (MariaDB) und für die Suche solR verwendet. Letztere müssen wir manuell starten, während Datenbank im Hintergrund bereits läuft. 
 
-:::warning
-Linux-Konvention: Wenn man Datei starten möchte innerhalb des Verzeichnisses, in de man sich befindet, muss Datei mit ./ vorgängig aufgerufen werden. 
+>[WARNING]
+>Linux-Konvention: Wenn man Datei starten möchte innerhalb des Verzeichnisses, in de man sich befindet, muss Datei mit ./ vorgängig aufgerufen werden. 
 
-:::
 
 Die Installation von Vufind hat mir einiges abverlangt! Dank der guten Anleitungen und minimaler Shell-Erfahrung, die ich mir in vorherigen Modulen angeeignet habe, haben alle Installationen bisher wunderbar geklappt und ich konnte 99% davon auch nachvollziehen. Trotzdem ging dieses Mal einiges schief. Beim Installationstermin musste ich früher weg und habe die Installation deshalb dann nicht beendet, wohl aber angefangen. Als ich das dann später nachholen wollte, scheiterte ich an mehreren Problemen:
 
@@ -103,14 +106,14 @@ Danach konnte solr normal gestartet werden
 - Nächstes Problem: Error 404 beim Aufrufen von http://localhost/vufind/Install/Home. Alles klar, also nochmals von vorne alles neu installiert. Zwischenzeitlich war ich unsicher, ob tatsächlich Java 8 installiert war, deshalb habe ich das überprüft mit ```` Java -version ````. So ganz schlau geworden daraus bin ich nicht, aber in der Versionsnummer war eine 8 enthalten, deshalb dachte ich, dass das schon passen wird. Auch nach der Neuinstallation trat das Problem auf, dass solr nicht gestartet werden konnte, aber das war ja inzwischen kein Hindernis mehr. Und siehe da, die Seite liess sich mit der Neuinstallation tatsächlich aufrufen. Problem gelöst. 
 - Die nächste (und mühsamste) Stolperfalle war dann der Import der Dateien im MARC21-Format. Dies liess sich nicht bewerkstelligen, ganz egal, wie ich das versucht habe. Am Ende dämmerte es mir dann doch: Da war doch was mit einem Befehl, der in der ersten Version der Anleitung nicht richtig ausgeführt worden war... Doch wie reparieren? Ich habe dann mal bei meinen Kolleginnen und Kollegen in den Lerntagebüchern gespickt, um zu schauen, wie die das gelöst haben und natürlich wurde ich bei [Gaby Leuenberger](https://regrebneuel.github.io/bain-log/2020-11-27/OpenRefine-reloaded) fündig:
 
-    sudo apt-get update
+```` sudo apt-get update ````
 
-    sudo apt-get upgrade
-
+    sudo apt-get upgrade 
+    
 Dann Java 8 installieren:
 
     sudo apt install -y openjdk-8-jdk
 
-Alle Schritte gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both) bis und mit dem Starten von Solr nochmals durchgeführt und wow, schon läufts wie geschmiert. Alle Konfigurationsschritte auf (http://localhost/vufind/Install/Home) konnte ich mir sparen, da ich das schon durchgeführt hatte. Nun klappte auch der Import der Beispieldaten problemlos: 
+Alle Schritte gemäss [Anleitung](https://pad.gwdg.de/ywogyRNTQ_CTg9PvrQywsQ?both) bis und mit dem Starten von Solr nochmals durchgeführt und wow, schon läufts wie geschmiert. Alle Konfigurationsschritte auf [http://localhost/vufind/Install/Home](http://localhost/vufind/Install/Home) konnte ich mir sparen, da ich das schon durchgeführt hatte. Nun klappte auch der Import der Beispieldaten problemlos: 
 
 <img alt="Mobile home page" src="https://github.com/rumolin/lerntagebuch-bain/blob/master/_screenshots/Bild 11.PNG?raw=true" width="70%"/>

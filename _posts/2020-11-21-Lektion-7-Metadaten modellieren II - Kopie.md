@@ -79,10 +79,10 @@ value.contains("test") | liefert Boolean Ausdruck zurück
 if(value.contains("test"), "Test data", value) | ersetzt einen Zellenwert mit den Worten "Test Data" wenn der Wert in der Zelle den tring "test" irgendwo beinhaltet. 
 
 In OpenRefine gibt es auch Arrays. Diese sind Listen von Werten, die wie gewohnt in [] präsentiert werden. Die Werte werden jeweils von "" abgeschlossen (bei Strings) und durch Kommas getrennt. Mit GREL-Expressions können Arrays transformiert werden:
-* value.split(",") | trennt bei Komma
-* value.split(",").sort() | würde das splitten und alphabetisch sortieren A-Z
-* value.split(",")[0] | gibt ersten Listeneintrag aus
-* value.split(",").sort().join(",") | würde Array wieder zusammenführen, allerdings ist der Eintrag dann alphabetisch sortiert. 
+value.split(",") | trennt bei Komma
+value.split(",").sort() | würde das splitten und alphabetisch sortieren A-Z
+value.split(",")[0] | gibt ersten Listeneintrag aus
+value.split(",").sort().join(",") | würde Array wieder zusammenführen, allerdings ist der Eintrag dann alphabetisch sortiert. 
 
 Daten, die mit OpenRefine bearbeitet wurden, können am Ende exportiert werden. 
 
@@ -106,7 +106,7 @@ Wir nutzen die Funktion *Templating Exporter* um MARCXML zu erstellen. Als erste
 
 Reverse Engineering, was fällt an den Daten auf?
 
-leader a22 uuu 4500 | hier liegen keine Transformationsregeln vor, ist hart codiert (das bedeutet, dass Text 1:1 übernommen wird, es liegen keien Transformationsregeln vor [^1]) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
+leader a22 uuu 4500 | hier liegen keine Transformationsregeln vor, ist hart codiert (das bedeutet, dass Text 1:1 übernommen wird, es liegen keine Transformationsregeln vor [^1]) Fragment von MARC21, das MARCXML eigentlich gar nicht braucht. 
 Im Feld 001 | wird URL ersetzt durch voreingegebenes in Klammer und mit escape (xml) sichergestellt, dass es kein nicht valides XML-Zeichen drin hat, wird dann ersetzt oder gar nicht abgebildet. 
 Im Feld 022 | werden ISSNs eingefügt (escape wird auch genutzt)
 Im Feld 100 | werden Autor*innen werden bei \| getrennt und der allererste wird eingefügt (wiederum mit escape kontrolliert). Dieses Feld ist ohnehin nur für 1 Autor*in gedacht

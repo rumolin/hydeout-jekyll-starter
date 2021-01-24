@@ -26,7 +26,7 @@ Der Import der Schnellaufnahme in Koha hat problemlos funktioniert. Offene Frage
 
 #### Namespaces
 
-Als Wiederholung haben wir die Defnition von Namespaces nochmals geklärt: Ein XML Namespace dient dazu, mehrere im selben Dokument verwendete XML-Formate voneinander unterscheien zu können (wenn diese beispielsweise gleichlautende Elementnamen verwenden). Beim Namespace handelt es sich in der Regel um eine URI (Beispiel: http://www.w3.org/1999/xhtml). Fürs Verständnis nützlich war die Aufschlüsselung am Beispiel von Dublin Core:
+Als Wiederholung haben wir die Defnition von Namespaces nochmals geklärt: Ein XML Namespace dient dazu, mehrere im selben Dokument verwendete XML-Formate voneinander unterscheien zu können (wenn diese beispielsweise gleichlautende Elementnamen verwenden). Beim Namespace handelt es sich in der Regel um eine URI (Beispiel: [http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)). Fürs Verständnis nützlich war die Aufschlüsselung am Beispiel von Dublin Core:
 * Namespace: http://purl.org/dc/elements/1.1/
 * Namespace-Kürzel: dc
 * Elementname: title

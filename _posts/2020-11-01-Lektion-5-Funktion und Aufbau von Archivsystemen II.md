@@ -20,7 +20,7 @@ tags:
 
 #### Daemon
 
-Archivesspace ist auch nutzbar, ohne dass die Shell die ganze Zeit im Hintergrund läuft. Archivesspace funktioniert in hierarchischen Prozessen, jeder Prozess hat eine Verbindung zu einem oberen. Wenn man beim Aufrufen am Ende des Befehls ein & anhängt, dann läuft das Programm im Hintergrund. hier noch ausführen? -> ARIS-Notizen anschauen
+Archivesspace ist auch nutzbar, ohne dass die Shell die ganze Zeit im Hintergrund läuft. Archivesspace funktioniert in hierarchischen Prozessen, jeder Prozess hat eine Verbindung zu einem oberen. Wenn man beim Aufrufen am Ende des Befehls ein & anhängt, dann läuft das Programm im Hintergrund.
 
 <!--more-->
 
@@ -32,9 +32,11 @@ Das Public Interface (8081) ist offenbar noch nicht mit Java 11 kompatibel.
 Da unter anderem bei mir Java 11 aktiv war, hat das Public Interface zu Beginn nicht funktioniert. 
 
 Anzeige der aktuellen Java-Version:
+    
     java -version
 
 Aktive Java-Version ändern:
+
     sudo update-alternatives --config java
 
 Es erscheint darauf ein Auswahlmenü zum abändern der Java-Version. 
@@ -44,7 +46,7 @@ Es erscheint darauf ein Auswahlmenü zum abändern der Java-Version.
 #### Begrifflichkeiten und Repetition von ArchivesSpace
 
 - **Accession:** Dokumentation der Erwerbung, ist oft nicht öffentlich, haben wir aber öffentlich gemacht. Wäre im echten Archiv wohl eher unüblich. Oft hat man vertrauliche Angaben, die wir nicht öffentlich machen wollen. Der Erwerbungsprozess soll zwar dokumentiert werden, allerdings wird der Status erst öffentlich gemacht, wenn das Archiv diese Information auch wirklich offen legen will. Das wäre in der Praxis wohl eher am Ende eines Archivierungsprozesses als am Anfang oder mittendrin. 
-* Gemäss Materialien von NYU dokuemtiert die Accession eine Gruppe von Archivmaterial. Eine Collection kann aus einer oder mehreren Accession bestehen und diese sollen die Fragen beantworten, wie das Material zu uns kam, was wir damit gemacht haben und wie wir das Material generell verwalten.   
+* Gemäss Materialien von NYU dokumentiert die Accession eine Gruppe von Archivmaterial. Eine Collection kann aus einer oder mehreren Accession bestehen und diese sollen die Fragen beantworten, wie das Material zu uns kam, was wir damit gemacht haben und wie wir das Material generell verwalten.   
 - Resource: in Archivesspace legt man eine Ressource an, die ist zentraler Nachweis auf oberster Ebene von ISAD(G), das kann Nachlass selbst sein oder als Einzelobjekt (beispielsweise Brief oder so ohne Kontext zu anderen Sammlungen). Der Normalfall ist aber, dass wir Nachlass/Sammlung haben usw. und dann das als Resource anlegen. 
 * Gemäss NYU: Intellektuelle Einheit. Das [SAA-Glossar](http://files.archivists.org/pubs/free/SAA-Glossary-2005.pdf) bezeichnet Resource als *verfügbare Bestände*. 
 - Archival Object: An dieser Resource kann man dann das sogenannte *Archival Object* dranhängen. Das ist der Nachweis von Objekten auf weitere Verzeichnisstufen. Sie werden mittels *add child* an vorhandene Ressourcen angehängt.
@@ -86,9 +88,9 @@ Kommerzielle Verionen: [scope archive](https://www.scope.ch/de/) und [CMI STAR](
 
 ##### Beispiele
 
-- Zenodo: Repositry, das Forschungsdaten und Publikationen aufnimmt, wird vom CERN betreut. Vor allem für Physik. Komplett kostenfrei. Man kann gb-weise Daten bereitstellen. Gilt als Best Practice Installation. Das führt zur Frage: Wollen wir Open Access Repository, macht man das wirklich selber oder soll man nicht besser bei Zenodo eine Community bilden? Wenn schlecht gemacht, dann lieber sein lassen und offene Variante nutzen wie Zenodo. Für alles wird eine DOI vergeben, es gibt auch Versionierung. Export in Literaturverwaltungsprogramme und grosse Datenmengen kann man kostenlos hochladen. 
-- tuhh: Toll ist, dass Infos verknüpft werden können. Man kann über Forschende reingehen und über Person und alles miteinander anschauen. Auch Netzwerkanalyse ist möglich, beispielsweise: *Mit wem zusammen schreibt xyz zusammen?*
-- orcid: ist ein Zusammenschluss von vielen grossen Verlagen mit dem Ziel, Personen aus der Wissenschaft eine eindeutige Identifikationsnummer zu vergeben. Wichtig, weil wenn Personen Einrichtungen verlassen oder Allerweltsnamen haben, will man das der Person trotzdem zuordnen können. Man kann sich registrieren und erhält persönliche orcid-Identifikationsnummer.  
+- [Zenodo](https://zenodo.org/): Repositry, das Forschungsdaten und Publikationen aufnimmt, wird vom CERN betreut. Vor allem für Physik. Komplett kostenfrei. Man kann gb-weise Daten bereitstellen. Gilt als Best Practice Installation. Das führt zur Frage: Wollen wir Open Access Repository, macht man das wirklich selber oder soll man nicht besser bei Zenodo eine Community bilden? Wenn schlecht gemacht, dann lieber sein lassen und offene Variante nutzen wie Zenodo. Für alles wird eine DOI vergeben, es gibt auch Versionierung. Export in Literaturverwaltungsprogramme und grosse Datenmengen kann man kostenlos hochladen. 
+- [TUHH](https://tore.tuhh.de/): Toll ist, dass Infos verknüpft werden können. Man kann über Forschende reingehen und über Person und alles miteinander anschauen. Auch Netzwerkanalyse ist möglich, beispielsweise: *Mit wem zusammen schreibt xyz zusammen?*
+- [orcid](https://orcid.org/): ist ein Zusammenschluss von vielen grossen Verlagen mit dem Ziel, Personen aus der Wissenschaft eine eindeutige Identifikationsnummer zu vergeben. Wichtig, weil wenn Personen Einrichtungen verlassen oder Allerweltsnamen haben, will man das der Person trotzdem zuordnen können. Man kann sich registrieren und erhält persönliche orcid-Identifikationsnummer.  
 
 ---
 

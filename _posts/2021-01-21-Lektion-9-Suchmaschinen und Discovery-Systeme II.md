@@ -16,8 +16,8 @@ tags:
 
 --- 
 
-> “Isn’t it true that only librarians like to search? Everyone
-else likes to find. “([Tennant 2001](
+> *Isn’t it true that only librarians like to search? Everyone
+else likes to find. *([Tennant, 2001](
 http://lj.libraryjournal.com/2001/10/digital-resources/cross-databasesearch-one-stop-shopping/))
 
 ---
@@ -34,7 +34,7 @@ Solr hat eine integrierte Suchoberfläche in der Adminoberfläche, zum Nachstell
 
 ---
 
-##### gewissen Unterschiede und Begriffsdefinitionen
+##### gewisse Unterschiede und Begriffsdefinitionen
 
 Zur genaueren Unterscheidung zwischen Datenbank und Suchindex haben wir uns die beiden Systeme anhand konkreter Beispiele etwas genauer angeschaut. Grundsätzlich wird beides mit Daten gespeist, jedoch haben die Systeme unterschiedliche Schwerpunkte. 
 
@@ -60,7 +60,7 @@ Das Logfile für die Suche über VuFind ist sehr viel länger. Zudem gibt es dor
 Es gab Versuche, Personalisierungen bei der Gewichtung durchzuführen, so dass beispielsweise Kunststudent*innen ein anderes Ranking erhalten als Maschinenbauer*innen. Das hat aber nicht wirklich so funktioniert, wie das beispielsweise bei Google klappt. Ein Problem ist auch, dass Suchvorgänge so nicht mehr wirklich reproduzierbar sind. 
 
 
-Nach dieser Übung haben wir sämtlichen importierte Daten gelöscht (was nach dem mühsamen Troubleshooting vom letzten Mal kurzzeitig Schnappatmungen bei mir ausgelöst hat, siehe dazu den (Blogbericht vom letzten Mal)[https://rumolin.github.io/lerntagebuch-bain/2020/11/21/Lektion-8-Suchmaschinen-und-Discovery-Systeme-I.html]) 
+Nach dieser Übung haben wir sämtlichen importierte Daten gelöscht (was nach dem mühsamen Troubleshooting vom letzten Mal kurzzeitig Schnappatmungen bei mir ausgelöst hat, siehe dazu den [Blogbericht vom letzten Mal](https://rumolin.github.io/lerntagebuch-bain/2020/11/21/Lektion-8-Suchmaschinen-und-Discovery-Systeme-I.html).
 
 ---
 
@@ -78,6 +78,6 @@ Was ich auch noch versucht habe, war, nach [dieser Anleitung](https://lucene.apa
 
 Wir haben in einem früheren Termin schon über den Library Systems Report gesprochen, da gab es jetzt nochmachls einen Überblick. Wir haben bis anhin vor allem über integrierte Bibliothekssysteme gesprochen. Discovery Systeme gibt es aber auch. Primo von Exlibris ist dabei Marktführer. In der Schweiz wurde ExLibris Alma und damit das dazu gehörige Discovery-System Primo VE eingeführt. Im Vergleich ist Vufind gar nicht so schlecht, denn die Funktionalitäten unterscheiden sich nicht gross. Ein weiterer wichtiger Punkt ist die Frage der Daten: In grossen Discoverysystemen wird bereits eine grosse Datenmengen mitgeliefert. 
 
-**Central Index:** Nachfolger vo ALeph und Co können E-Ressourcen besser verwalten. Pakete müssen an- und abgeschaltet werden können. Häufig hat man einen grossen Index, also Suchindex, den man mitkauft, damit man in Discovery-Oberfläche oder E-Ressourcen-Management-Tool Zugriff hat auf Info, was es überhaupt gibt. Wenn man ein Discoverysystem macht, kauft man in der Regel Software und gleichzeitig Index dazu, bei Primo wäre das Primo Central. Ein Discoverysystem ohne Arikelindex bringt im Prinzip nicht mehr sooo viel. 
+**Central Index:** Nachfolger von Aleph und Co können E-Ressourcen besser verwalten. Pakete müssen an- und abgeschaltet werden können. Häufig hat man einen grossen Index, also Suchindex, den man mitkauft, damit man in Discovery-Oberfläche oder E-Ressourcen-Management-Tool Zugriff hat auf Info, was es überhaupt gibt. Wenn man ein Discoverysystem macht, kauft man in der Regel Software und gleichzeitig Index dazu, bei Primo wäre das Primo Central. Ein Discoverysystem ohne Arikelindex bringt im Prinzip nicht mehr sooo viel. 
 
 
